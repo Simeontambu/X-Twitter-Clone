@@ -1,4 +1,5 @@
 import Image from "./../images/profile-photo.png";
+
 import Profile from "./profile";
 import { BsCardImage } from "react-icons/bs";
 import { MdOutlineGifBox } from "react-icons/md";
@@ -21,6 +22,7 @@ export default function Editor() {
               <span>
                 <BsCardImage />
               </span>
+
               <span>
                 <MdOutlineGifBox />
               </span>

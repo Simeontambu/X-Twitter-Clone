@@ -1,49 +1,56 @@
+import React from "react";
 import Profile from "./profile";
-import Tweetactions from "./tweet-actions";
+import TweetActions from "./tweet-actions";
 import { PiSealCheckFill } from "react-icons/pi";
-export default function Tweets(props) {
+import tweetsData from "../tweet-data";
+
+export default function Tweets() {
   return (
     <>
-      <div className="tweets">
-        <div className="tweet">
-          <Profile
-            className="avatar tweet-avatar"
-            src={props.profileUser}
-            alt="profile-image"
-          />
-          <div className="tweet-content">
-            <div className="tweet-body">
-              <p className="tweet-text">
-                <span className="tweet-title-author">
-                  {props.username}
-                  <span>
-                    <PiSealCheckFill />
+    <div className="tweets" >
+      {tweetsData.map((tweet, index) => {
+        console.log(tweet);
+        return (
+          
+            <div className="tweet" key={index}>
+              <Profile
+                className="tweet-avatar"
+                src={tweet.profileUser}
+                alt="profile-image"
+              />
+              <div className="tweet-content">
+                <div className="tweet-body">
+                  <span className="tweet-title">
+                    <span className="tweet-title-author">{tweet.name}</span>
+                    <span>
+                      <PiSealCheckFill />
+                    </span>
+                    <span className="tweet-title-details">
+                      {tweet.author}
+                    </span>
+                    <span className="tweet-title-details">{" . "}</span>
+                    <span className="tweet-title-details">
+                      {tweet.dateOrTime}
+                    </span>
                   </span>
-                  <span className="tweet-title-details">
-                    {props.author}
-                    {" . "}
-                  </span>
-                  <span className="tweet-title-details">
-                    {props.dateOrTime}
-                  </span>
-                </span>
 
-                <br />
-                <br />
-                {props.children}
-              </p>
-              {props.img && (
-                <Profile className="avatar tweet-image" src={props.img} />
-              )}
+                  <p className="tweet-text">{tweet.content}</p>
+
+                  {tweet.Img && (
+                    <Profile className="tweet-image" src={tweet.Img} />
+                  )}
+                </div>
+                <TweetActions
+                  userComment={tweet.comment}
+                  userRetweet={tweet.retweet}
+                  userLove={tweet.love}
+                />
+              </div>
             </div>
-            <Tweetactions
-              userComment={props.comment}
-              userRetweet={props.retweet}
-              userLove={props.love}
-            />
-          </div>
-        </div>
-      </div>
+         
+        );
+      })}
+       </div>
     </>
-  );
+  )
 }
