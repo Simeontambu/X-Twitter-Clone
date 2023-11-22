@@ -5,11 +5,7 @@ import Schedule from "./../images/Schedule.svg";
 import Gif from "./../images/gif.svg";
 import Emoji from "./../images/Group.svg";
 import Profile from "./profile";
-import { BsCardImage } from "react-icons/bs";
-import { MdOutlineGifBox } from "react-icons/md";
-import { FaSquarePollHorizontal } from "react-icons/fa6";
-import { MdEmojiEmotions } from "react-icons/md";
-import { GrSchedulePlay } from "react-icons/gr";
+
 export default function Editor() {
   return (
     <>

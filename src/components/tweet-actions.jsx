@@ -6,24 +6,23 @@ export default function Tweetactions(props) {
   return (
     <>
       <div className="tweet-actions">
-        <span className="tweet-action">
+        <div className="tweet-action">
           <FiMessageCircle />
-          <span>{props.userComment}</span>
-        </span>
+          {props.userComment}
+        </div>
 
-        <span className="tweet-action">
+        <div className="tweet-action">
           <FaRetweet />
-          <span>{props.userRetweet}</span>
-        </span>
+          {props.userRetweet}
+        </div>
 
-        <span className="tweet-action">
+        <div className="tweet-action">
           <CiHeart />
-          <span>{props.userLove}</span>
-        </span>
-
-        <span className="tweet-action">
+          {props.userLove}
+        </div>
+        <div className="tweet-action">
           <FiShare />
-        </span>
+        </div>
       </div>
     </>
   );

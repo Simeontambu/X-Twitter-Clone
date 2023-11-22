@@ -7,11 +7,9 @@ import tweetsData from "../tweet-data";
 export default function Tweets() {
   return (
     <>
-    <div className="tweets" >
-      {tweetsData.map((tweet, index) => {
-        console.log(tweet);
-        return (
-          
+      <div className="tweets">
+        {tweetsData.map((tweet, index) => {
+          return (
             <div className="tweet" key={index}>
               <Profile
                 className="tweet-avatar"
@@ -25,9 +23,7 @@ export default function Tweets() {
                     <span>
                       <PiSealCheckFill />
                     </span>
-                    <span className="tweet-title-details">
-                      {tweet.author}
-                    </span>
+                    <span className="tweet-title-details">{tweet.author}</span>
                     <span className="tweet-title-details">{" . "}</span>
                     <span className="tweet-title-details">
                       {tweet.dateOrTime}
@@ -35,10 +31,9 @@ export default function Tweets() {
                   </span>
 
                   <p className="tweet-text">{tweet.content}</p>
-
-                  {tweet.Img && (
-                    <Profile className="tweet-image" src={tweet.Img} />
-                  )}
+                  <div className="tweet-image">
+                    {tweet.Img && <Profile src={tweet.Img} />}
+                  </div>
                 </div>
                 <TweetActions
                   userComment={tweet.comment}
@@ -47,10 +42,9 @@ export default function Tweets() {
                 />
               </div>
             </div>
-         
-        );
-      })}
-       </div>
+          );
+        })}
+      </div>
     </>
-  )
+  );
 }
