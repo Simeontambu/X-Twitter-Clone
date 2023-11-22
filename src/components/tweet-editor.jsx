@@ -1,5 +1,9 @@
 import Image from "./../images/profile-photo.png";
-
+import Media from "./../images/Media.svg";
+import Poll from "./../images/Poll.svg";
+import Schedule from "./../images/Schedule.svg";
+import Gif from "./../images/gif.svg";
+import Emoji from "./../images/Group.svg";
 import Profile from "./profile";
 import { BsCardImage } from "react-icons/bs";
 import { MdOutlineGifBox } from "react-icons/md";
@@ -19,22 +23,11 @@ export default function Editor() {
           />
           <div className="tweet-editor-buttons">
             <div className="tweet-editor-actions">
-              <span>
-                <BsCardImage />
-              </span>
-
-              <span>
-                <MdOutlineGifBox />
-              </span>
-              <span>
-                <FaSquarePollHorizontal />
-              </span>
-              <span>
-                <MdEmojiEmotions />
-              </span>
-              <span>
-                <GrSchedulePlay />
-              </span>
+              <Profile src={Media} />
+              <Profile src={Gif} />
+              <Profile src={Poll} />
+              <Profile src={Emoji} />
+              <Profile src={Schedule} />
             </div>
             <button className="button">Tweet</button>
           </div>
