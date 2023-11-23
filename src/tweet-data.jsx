@@ -48,7 +48,7 @@ const tweetsData = [
   },
   {
     name: "Twitter",
-    content: "Lorem Ipsum is simply dummy",
+    content: "hello literally everyone",
     Img: Image,
     comment: "18.7K",
     retweet: "785.4K",
