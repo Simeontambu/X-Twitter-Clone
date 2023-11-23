@@ -1,12 +1,12 @@
 import Image from "../src/images/tweet-image.png";
-import Cnn from "./../src/images/tweet-profile-photo.png";
-import logoX from "./../src/images/logo-rond-twitter.png";
-import logoNewYorkTime from "./../src/images/logoNewYorkTime.png";
+import Cnn from "./../src/images/tweet-profile-photo.svg";
+import logoX from "./../src/images/logo-rond-twitter.svg";
+import logoNewYorkTime from "./../src/images/logoNewYorkTime.svg";
 const tweetsData = [
   {
     name: "CNN",
     content:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a major breakthrough that would serve to both strengthen the US steel industry and combat the global climate crisis.",
     comment: 57,
     retweet: 144,
     love: 184,
@@ -15,46 +15,45 @@ const tweetsData = [
     profileUser: Cnn,
   },
   {
-    name: "Twitter",
+    name: "The New York Times",
     content:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "Gardening boomed during the pandemic. Six Black writers share how it has helped them re-establish, and reimagine, a connection to cultivation and the land",
     Img: Image,
     comment: 19,
     retweet: 48,
     love: 482,
-    dateOrTime: "Oct 29",
-    author: "@twitter",
+    dateOrTime: "2h",
+    author: "@nytimes",
     profileUser: logoNewYorkTime,
   },
   {
-    name: "Rdc",
-    content: "Lorem Ipsum is simply dummy",
+    name: "Twitter",
+    content: "BIG NEWS lol jk still Twitter",
     comment: "6.8K",
     retweet: "36.6K",
     love: "267.1K",
     dateOrTime: "Oct 20",
-    author: "@twitter",
-    profileUser: logoX,
-  },
-  {
-    name: "France24",
-    content: "Lorem Ipsum is simply dummy",
-    comment: "18.7K",
-    retweet: "785.4K",
-    love: "3.3M",
-    dateOrTime: "Oct 15",
-    author: "@twitter",
+    author: "@Twitter",
     profileUser: logoX,
   },
   {
     name: "Twitter",
-    content:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    content: "hello literally everyone",
+    comment: "118.7K",
+    retweet: "785.4K",
+    love: "3.3M",
+    dateOrTime: "Oct 4",
+    author: "@Twitter",
+    profileUser: logoX,
+  },
+  {
+    name: "Twitter",
+    content: "Lorem Ipsum is simply dummy",
     Img: Image,
-    comment: 19,
-    retweet: 48,
-    love: 482,
-    dateOrTime: "Oct 17",
+    comment: "18.7K",
+    retweet: "785.4K",
+    love: "3.3M",
+    dateOrTime: "Oct 4",
     author: "@twitter",
     profileUser: logoX,
   },

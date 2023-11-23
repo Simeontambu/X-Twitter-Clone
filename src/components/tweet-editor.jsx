@@ -1,4 +1,4 @@
-import Image from "./../images/profile-photo.png";
+import Image from "./../images/profile-photo.svg";
 import Media from "./../images/Media.svg";
 import Poll from "./../images/Poll.svg";
 import Schedule from "./../images/Schedule.svg";
