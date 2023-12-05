@@ -5,6 +5,7 @@ import Schedule from "./../images/Schedule.svg";
 import Gif from "./../images/gif.svg";
 import Emoji from "./../images/Group.svg";
 import Profile from "./profile";
+import Button from "./button";
 
 export default function Editor() {
   return (
@@ -25,7 +26,8 @@ export default function Editor() {
               <Profile src={Emoji} />
               <Profile src={Schedule} />
             </div>
-            <button className="button">Tweet</button>
+            
+            <Button className="button" name="Tweet" />
           </div>
         </div>
       </div>

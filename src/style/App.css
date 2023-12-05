@@ -193,3 +193,48 @@ body{
     justify-content: center;
     gap: 20px;
 }
+ul{
+    list-style: none;
+    padding: 0;
+}
+/* color hover */
+/* .sidebar ul li:hover {
+    background-color: #464b4c;
+    border-radius:50px ;
+  } */
+ul li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.spaceLogoLinkName{
+    margin-right: 10px;
+  
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+
+}
+.logoX{
+    margin-bottom: 20px;
+    padding-top: 1.5em;
+}
+.active{
+    text-decoration: none;
+    color: white;
+    
+}
+.button-sidebar {
+    text-transform: capitalize;
+    width: 225px;
+    height: 52px;
+    padding: 16px 0px ;
+    border: none;
+    border-radius: 50px;
+    background-color: #1D9BF0;
+    color: white;
+    font-size: 1rem;
+}
+
