@@ -36,9 +36,9 @@ export default function Tweets() {
                   </div>
                 </div>
                 <TweetActions
-                  userComment={tweet.comment}
-                  userRetweet={tweet.retweet}
-                  userLove={tweet.love}
+                  userComment={tweet.comments}
+                  userRetweet={tweet.retweets}
+                  userLove={tweet.likes}
                 />
               </div>
             </div>

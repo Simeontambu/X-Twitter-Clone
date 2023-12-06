@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../components/header";
-import Editor from "../components/tweet-editor";
+import Editor from "../components/tweetEditor";
 import Tweets from "../components/tweets";
 import Sidebar from "../components/sidebarLeft";
 
