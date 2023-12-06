@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 function Layout({ children }) {
   return (
@@ -7,7 +7,7 @@ function Layout({ children }) {
       {children}
       <div className="right-sidebar" />
     </>
-  );
+  )
 }
 
-export default Layout;
+export default Layout

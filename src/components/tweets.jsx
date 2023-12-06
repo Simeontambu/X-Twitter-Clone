@@ -1,8 +1,8 @@
-import React from "react";
-import Image from "./image";
-import TweetActions from "./tweet-actions";
-import { PiSealCheckFill } from "react-icons/pi";
-import tweetsData from "../tweet-data";
+import React from "react"
+import Image from "./image"
+import TweetActions from "./tweet-actions"
+import { PiSealCheckFill } from "react-icons/pi"
+import tweetsData from "../tweet-data"
 
 export default function Tweets() {
   return (
@@ -42,9 +42,9 @@ export default function Tweets() {
                 />
               </div>
             </div>
-          );
+          )
         })}
       </div>
     </>
-  );
+  )
 }

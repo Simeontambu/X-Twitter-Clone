@@ -12,8 +12,8 @@ export default function SidebarRight() {
       name: "Utilisateur3",
       username: "@utilisateur3",
     },
-  ];
-  const trends = ["#Tendance1", "#Tendance2", "#Tendance3", "#Tendance4"];
+  ]
+  const trends = ["#Tendance1", "#Tendance2", "#Tendance3", "#Tendance4"]
 
   return (
     <div>
@@ -43,5 +43,5 @@ export default function SidebarRight() {
         <a href="">Show more</a>
       </div>
     </div>
-  );
+  )
 }

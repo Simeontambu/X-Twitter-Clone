@@ -1,16 +1,16 @@
-import { NavLink } from "react-router-dom";
-import Button from "./button";
-import Image from "./image";
-import logoHome from "./../images/Home-Fill.svg";
-import logoX from "./../images/Twitter.svg";
-import logoExplore from "./../images/Explore.svg";
-import logoNotifications from "./../images/Notifications.svg";
-import logoMore from "./../images/More.svg";
-import logoImage from "./../images/Profile.svg";
-import logoLists from "./../images/Lists.svg";
-import logoBookmarks from "./../images/Bookmarks.svg";
-import logoMessages from "./../images/Messages.svg";
-import Profile from "./../pages/profile";
+import { NavLink } from "react-router-dom"
+import Button from "./button"
+import Image from "./image"
+import logoHome from "./../images/Home-Fill.svg"
+import logoX from "./../images/Twitter.svg"
+import logoExplore from "./../images/Explore.svg"
+import logoNotifications from "./../images/Notifications.svg"
+import logoMore from "./../images/More.svg"
+import logoImage from "./../images/Profile.svg"
+import logoLists from "./../images/Lists.svg"
+import logoBookmarks from "./../images/Bookmarks.svg"
+import logoMessages from "./../images/Messages.svg"
+import Profile from "./../pages/profile"
 
 export default function Sidebar() {
   return (
@@ -54,5 +54,5 @@ export default function Sidebar() {
         <Button name="Tweet" className="button-sidebar" />
       </div>
     </>
-  );
+  )
 }
