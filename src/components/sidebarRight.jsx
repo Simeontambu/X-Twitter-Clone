@@ -1,3 +1,5 @@
+import logoSetting from "./../images/Options.svg";
+import Image from "./image";
 export default function SidebarRight() {
   const usersToFollow = [
     {
@@ -12,19 +14,34 @@ export default function SidebarRight() {
       name: "Utilisateur3",
       username: "@utilisateur3",
     },
-  ]
-  const trends = ["#Tendance1", "#Tendance2", "#Tendance3", "#Tendance4"]
+  ];
+  const trends = ["#Tendance1", "#Tendance2", "#Tendance3", "#Tendance4"];
 
   return (
-    <div>
+    <div className="sidebar-right">
       <div>
-        <input type="text" placeholder="Search Twitter" />
+        <input
+          type="text"
+          placeholder="Search Twitter"
+          className="search-twitter search-icon"
+        />
       </div>
-      <div>
-        <h3>Trends for you</h3>
+      <div className="trends">
+        <div className="Trends-for-you">
+          <h3>Trends for you</h3>
+          <Image src={logoSetting} className="setting" />
+        </div>
+
         <ul>
           {trends.map((trend) => (
-            <li key={trend}>{trend}</li>
+            <>
+              <div className="Trending">
+                <p className="tweet-title-details">Trending in Turkey</p>
+                <p className="more">...</p>
+              </div>
+              <li key={trend}>{trend}</li>
+              <span className="tweet-title-details">2,066 Tweets</span>
+            </>
           ))}
         </ul>
         <a href="">Show more</a>
@@ -43,5 +60,5 @@ export default function SidebarRight() {
         <a href="">Show more</a>
       </div>
     </div>
-  )
+  );
 }
