@@ -179,8 +179,8 @@ body{
     gap: 5rem;
     color: grey;
     font-size: 1rem;
+    
 }
-
 .tweet-actions svg {
     width: 1rem;
     height: auto;
@@ -192,6 +192,8 @@ body{
     align-items: center;
     justify-content: center;
     gap: 20px;
+    width: 75px;
+   
 }
 ul{
     list-style: none;
