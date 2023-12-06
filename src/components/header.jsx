@@ -1,5 +1,4 @@
-
-import Image from "./image"
+import Image from "./image";
 import Img from "./../images/topTweet.png";
 
 export default function Header() {

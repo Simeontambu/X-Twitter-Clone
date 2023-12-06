@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "./image"
+import Image from "./image";
 import TweetActions from "./tweet-actions";
 import { PiSealCheckFill } from "react-icons/pi";
 import tweetsData from "../tweet-data";

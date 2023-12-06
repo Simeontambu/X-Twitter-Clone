@@ -2,7 +2,7 @@ import Reply from "./../images/Reply.svg";
 import Retweet from "./../images/Retweet.svg";
 import React from "./../images/React.svg";
 import Share from "./../images/Share.svg";
-import Image from "./image"
+import Image from "./image";
 
 export default function Tweetactions({ userComment, userRetweet, userLove }) {
   return (
@@ -20,7 +20,7 @@ export default function Tweetactions({ userComment, userRetweet, userLove }) {
 
         <div className="tweet-action">
           <Image src={React} />
-          {userLove }
+          {userLove}
         </div>
         <div className="tweet-action">
           <Image src={Share} />

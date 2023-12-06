@@ -4,7 +4,7 @@ import Poll from "./../images/Poll.svg";
 import Schedule from "./../images/Schedule.svg";
 import Gif from "./../images/gif.svg";
 import Emoji from "./../images/Group.svg";
-import Image from "./image"
+import Image from "./image";
 import Button from "./button";
 
 export default function Editor() {
@@ -26,7 +26,7 @@ export default function Editor() {
               <Image src={Emoji} />
               <Image src={Schedule} />
             </div>
-            
+
             <Button className="button" name="Tweet" />
           </div>
         </div>
