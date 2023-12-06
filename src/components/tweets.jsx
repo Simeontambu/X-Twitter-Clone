@@ -1,5 +1,5 @@
 import React from "react";
-import Profile from "./profile";
+import Image from "./image"
 import TweetActions from "./tweet-actions";
 import { PiSealCheckFill } from "react-icons/pi";
 import tweetsData from "../tweet-data";
@@ -11,7 +11,7 @@ export default function Tweets() {
         {tweetsData.map((tweet, index) => {
           return (
             <div className="tweet" key={index}>
-              <Profile
+              <Image
                 className="tweet-avatar"
                 src={tweet.profileUser}
                 alt="profile-image"
@@ -32,7 +32,7 @@ export default function Tweets() {
 
                   <p className="tweet-text">{tweet.content}</p>
                   <div className="tweet-image">
-                    {tweet.Img && <Profile src={tweet.Img} />}
+                    {tweet.Img && <Image src={tweet.Img} />}
                   </div>
                 </div>
                 <TweetActions

@@ -2,28 +2,28 @@ import Reply from "./../images/Reply.svg";
 import Retweet from "./../images/Retweet.svg";
 import React from "./../images/React.svg";
 import Share from "./../images/Share.svg";
-import Profile from "./profile";
+import Image from "./image"
 
 export default function Tweetactions({ userComment, userRetweet, userLove }) {
   return (
     <>
       <div className="tweet-actions">
         <div className="tweet-action">
-          <Profile src={Reply} />
+          <Image src={Reply} />
           {userComment}
         </div>
 
         <div className="tweet-action">
-          <Profile src={Retweet} />
+          <Image src={Retweet} />
           {userRetweet}
         </div>
 
         <div className="tweet-action">
-          <Profile src={React} />
+          <Image src={React} />
           {userLove }
         </div>
         <div className="tweet-action">
-          <Profile src={Share} />
+          <Image src={Share} />
         </div>
       </div>
     </>
