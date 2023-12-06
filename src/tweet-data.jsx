@@ -1,4 +1,4 @@
-import Image from "../src/images/tweet-image.png";
+import Image from "../src/images/tweet-image1.png";
 import Cnn from "./../src/images/tweet-profile-photo.svg";
 import logoX from "./../src/images/logo-rond-twitter.svg";
 import logoNewYorkTime from "./../src/images/logoNewYorkTime.svg";

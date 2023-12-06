@@ -1,6 +1,6 @@
 import React from "react"
 import Image from "./image"
-import TweetActions from "./tweet-actions"
+import TweetActions from "./tweetActions"
 import Verified from "./../images/Verified.svg"
 import tweetsData from "../tweet-data"
 
