@@ -1,7 +1,7 @@
 import React from "react"
 import Image from "./image"
 import TweetActions from "./tweet-actions"
-import { PiSealCheckFill } from "react-icons/pi"
+import Verified from "./../images/Verified.svg"
 import tweetsData from "../tweet-data"
 
 export default function Tweets() {
@@ -21,7 +21,7 @@ export default function Tweets() {
                   <span className="tweet-title">
                     <span className="tweet-title-author">{tweet.name}</span>
                     <span>
-                      <PiSealCheckFill />
+                    <Image src={Verified} />
                     </span>
                     <span className="tweet-title-details">{tweet.author}</span>
                     <span className="tweet-title-details">{" . "}</span>
