@@ -50,11 +50,15 @@ export default function SidebarRight() {
         <h3>Who to follow</h3>
         <ul>
           {usersToFollow.map((user) => (
-            <li key={user.username}>
-              <span>{user.name}</span>
+            <>
+              <li key={user.username}>
+                <span>{user.name}</span>
+
+                <button>Follow</button>
+              </li>
+        
               <span>{user.username}</span>
-              <button>Follow</button>
-            </li>
+            </>
           ))}
         </ul>
         <a href="">Show more</a>
