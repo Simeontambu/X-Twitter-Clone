@@ -1,5 +1,8 @@
 import logoSetting from "./../images/Options.svg";
 import Image from "./image";
+import Verified from "./../images/Verified.svg";
+import tweets from "./../tweet-data";
+
 export default function SidebarRight() {
   const usersToFollow = [
     {
@@ -15,7 +18,7 @@ export default function SidebarRight() {
       username: "@utilisateur3",
     },
   ];
-  const trends = ["#Tendance1", "#Tendance2", "#Tendance3", "#Tendance4"];
+  const trends = ["#SQUID", "#SQUID", "#SQUID", "#SQUID"];
 
   return (
     <div className="sidebar-right">
@@ -44,24 +47,70 @@ export default function SidebarRight() {
             </>
           ))}
         </ul>
-        <a href="">Show more</a>
+        <a href="" className="show-more">
+          Show more
+        </a>
       </div>
       <div className="who-to-follow">
         <h3>Who to follow</h3>
         <ul>
-          {usersToFollow.map((user) => (
+          {tweets.slice(0, 3).map((tweet, index) => (
             <>
-              <li key={user.username}>
-                <span>{user.name}</span>
+              <li key={index}>
+                {index === 0 ? (
+                  <>
+                    <Image src={tweets[1].profileUser} />
+                    <div>
+                      <div className="who-to-follow-name">
+                        <span>
+                          {tweets[1].name} <Image src={Verified} />
+                        </span>
+                        <button>Follow</button>
+                      </div>
+                      <span className="username tweet-title-details">
+                        {tweet.author}
+                      </span>
+                    </div>
+                  </>
+                ) : index === 1 ? (
+                  <>
+                    <Image src={tweets[0].profileUser} />
+                    <div>
+                      <div className="who-to-follow-name">
+                        <span>
+                          {tweets[0].name} <Image src={Verified} />{" "}
+                        </span>
 
-                <button>Follow</button>
+                        <button>Follow</button>
+                      </div>
+                      <span className="username tweet-title-details">
+                        {tweet.author}
+                      </span>
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <Image src={tweet.profileUser} />
+                    <div>
+                      <div className="who-to-follow-name">
+                        <span>
+                          {tweet.name} <Image src={Verified} />
+                        </span>
+                        <button>Follow</button>
+                      </div>
+                      <span className="username tweet-title-details">
+                        {tweet.author}
+                      </span>
+                    </div>
+                  </>
+                )}
               </li>
-        
-              <span>{user.username}</span>
             </>
           ))}
         </ul>
-        <a href="">Show more</a>
+        <a href="" className="show-more">
+          Show more
+        </a>
       </div>
     </div>
   );

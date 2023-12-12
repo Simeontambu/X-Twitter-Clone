@@ -26,7 +26,6 @@ body {
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #2f3336;
- 
 }
 
 .top-tweets {
@@ -50,7 +49,6 @@ body {
 
 .avatar {
   flex: 0 0 70px;
-  /*padding: 0 rem;*/
 }
 
 .avatar img {
@@ -89,10 +87,12 @@ body {
   /*padding: 0.8rem 0;*/
   gap: 1rem;
 }
+
 .tweet-editor-actions button {
   background-color: transparent;
   border: none;
 }
+
 .button {
   text-transform: capitalize;
   padding: 0.7rem 1.5rem;
@@ -102,6 +102,7 @@ body {
   color: white;
   font-size: 1rem;
 }
+
 .tweet {
   display: flex;
   justify-content: flex-start;
@@ -112,8 +113,6 @@ body {
 }
 
 .tweet-avatar {
-  /*height: 70px;*/
-  /*width: 70px;*/
   flex: 0 0 70px;
 }
 
@@ -122,6 +121,7 @@ body {
   max-height: 100px;
   border-radius: 100%;
 }
+
 .tweet-content {
   display: flex;
   flex-direction: column;
@@ -130,11 +130,13 @@ body {
   gap: 30px;
   width: 100%;
 }
+
 .tweet-body {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
+
 .tweet-title {
   display: flex;
   justify-content: flex-start;
@@ -147,12 +149,15 @@ body {
   width: 1.2rem;
   height: auto;
 }
+
 .tweet-title-author {
   font-size: 1rem;
 }
+
 .tweet-title-details {
   color: #6e767d;
 }
+
 .tweet-text {
   color: #d9d9d9;
   font-size: 1rem;
@@ -180,6 +185,7 @@ body {
   color: grey;
   font-size: 1rem;
 }
+
 .tweet-actions svg {
   width: 1rem;
   height: auto;
@@ -195,6 +201,14 @@ body {
 }
 
 /* side bar left */
+.sidebar {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+}
+
 .sidebar ul {
   list-style: none;
   padding: 0;
@@ -205,39 +219,42 @@ body {
   align-items: center;
   margin-bottom: 20px;
 }
+
+/* .sidebar ul li:hover {
+  background-color: #202327;
+  border-radius: 50px;
+} */
+
 .spaceLogoLinkName {
   margin-right: 10px;
 }
-.sidebar, .sidebar-right {
- 
 
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    overflow-y: auto;
-   
+.sidebar,
+.sidebar-right {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
 }
 
 .sidebar {
-   
-    left: 60px;
-    /* width: 275px; */
-    
-  }
-  
-  .sidebar-right {
-    right: -20px;
-    
-    
-  }
+  left: 60px;
+}
+
+.sidebar-right {
+  right: -20px;
+}
+
 .logoX {
   margin-bottom: 20px;
   padding-top: 1.5em;
 }
+
 .active {
   text-decoration: none;
   color: white;
 }
+
 .button-sidebar {
   text-transform: capitalize;
   width: 225px;
@@ -250,9 +267,7 @@ body {
   font-size: 1rem;
 }
 
-
 /* side bar right */
-
 
 .sidebar-right {
   width: 360px;
@@ -288,16 +303,18 @@ body {
   padding: 0;
   margin: 0;
 }
-.trends, .who-to-follow {
-    display: flex;
-    width: 330px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    flex-shrink: 0;
-    background-color: #202327;
-    border-radius: 15px;
-    padding: 10px 10px;
+
+.trends,
+.who-to-follow {
+  display: flex;
+  width: 330px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-color: #202327;
+  border-radius: 15px;
+  padding: 10px 10px;
 }
 
 .sidebar-right ul li {
@@ -308,62 +325,94 @@ body {
   color: #1da1f2;
   text-decoration: none;
 }
-.who-to-follow{
-    margin-top: 15px;
 
+.who-to-follow {
+  margin-top: 15px;
 }
+
 .sidebar-right .who-to-follow button {
   background-color: white;
   color: rgb(60, 58, 58);
   padding: 5px 10px;
-  margin-left: 160px;
+
   border: none;
   border-radius: 20px;
   font-weight: bold;
   cursor: pointer;
 }
 
-
 .search-icon {
   background-image: url("./../images/Search-Icon.svg");
   background-position: left;
   background-repeat: no-repeat;
-  text-indent: 35px; 
+  text-indent: 35px;
 }
-.Trends-for-you{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding-bottom: 1px;
-    gap: 6px;
 
-    
+.Trends-for-you {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 1px;
+  gap: 6px;
 }
-.setting{
-    display: flex;
-    height: 20px;
-    padding: 0px 18px 0px 14px;
-    
-   
-    
-}
-.Trending{
-    display: flex;
-    justify-content: space-between;
-    width: 320px;
-    padding-bottom: 1px;
-    gap: 6px;
-}
-.Trending .more{
-  
-padding: 0px 16px 0px 8px;
 
+.setting {
+  display: flex;
+  height: 20px;
+  padding: 0px 18px 0px 14px;
 }
+
+.Trending {
+  display: flex;
+  justify-content: space-between;
+  width: 320px;
+
+  padding-bottom: 1px;
+  gap: 6px;
+}
+
+.trends ul li {
+  margin-bottom: 0px;
+}
+
+.trends ul .Trending > p {
+  margin-top: 15px;
+}
+
+.Trending .more {
+  padding: 0px 16px 0px 8px;
+}
+
+.who-to-follow ul {
+  width: 100%;
+}
+
 .who-to-follow ul li {
-  /* display: flex; */
-  /* align-items: center;*/
-  margin-bottom: -5px; 
+  margin-top: 20px;
+  display: flex;
 }
-/* .who-to-follow ul li span {
-  margin-right: 20px;
-} */
+
+.who-to-follow ul li .username {
+  margin-top: -6px;
+  display: flex;
+  margin-left: 10px;
+}
+
+.who-to-follow ul .who-to-follow-name {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+  margin-left: 10px;
+}
+
+.show-more {
+  margin-top: 20px;
+}
+
+.user-avatar {
+  margin-top: 20px;
+  display: flex;
+}
+.user-avatar-name .tweet-title-details {
+  margin-left: 150px;
+}

@@ -1,16 +1,17 @@
-import { NavLink } from "react-router-dom"
-import Button from "./button"
-import Image from "./image"
-import logoHome from "./../images/Home-Fill.svg"
-import logoX from "./../images/Twitter.svg"
-import logoExplore from "./../images/Explore.svg"
-import logoNotifications from "./../images/Notifications.svg"
-import logoMore from "./../images/More.svg"
-import logoImage from "./../images/Profile.svg"
-import logoLists from "./../images/Lists.svg"
-import logoBookmarks from "./../images/Bookmarks.svg"
-import logoMessages from "./../images/Messages.svg"
-import Profile from "./../pages/profile"
+import { NavLink } from "react-router-dom";
+import Button from "./button";
+import Image from "./image";
+import logoHome from "./../images/Home-Fill.svg";
+import logoX from "./../images/Twitter.svg";
+import logoExplore from "./../images/Explore.svg";
+import logoNotifications from "./../images/Notifications.svg";
+import logoMore from "./../images/More.svg";
+import logoImage from "./../images/Profile.svg";
+import logoLists from "./../images/Lists.svg";
+import logoBookmarks from "./../images/Bookmarks.svg";
+import logoMessages from "./../images/Messages.svg";
+import Img from "./../images/profile-photo.svg";
+import Profile from "./../pages/profile";
 
 export default function Sidebar() {
   return (
@@ -44,15 +45,27 @@ export default function Sidebar() {
           </li>
           <li>
             <Image src={logoImage} className="spaceLogoLinkName" />
-            <NavLink to="">Image</NavLink>
+            <NavLink to="">Profile</NavLink>
           </li>
           <li>
             <Image src={logoMore} className="spaceLogoLinkName" />
             <NavLink to="">More</NavLink>
           </li>
+          <Button name="Tweet" className="button-sidebar" />
         </ul>
-        <Button name="Tweet" className="button-sidebar" />
+
+        <div className="user-avatar">
+          <Image className="avatar" src={Img} />
+          <div className="">
+            <div className="user-avatar-name">
+              <span>Bradley Ortis</span>
+
+              <span className=" tweet-title-details">...</span>
+            </div>
+            <span className=" tweet-title-details">@Bradley</span>
+          </div>
+        </div>
       </div>
     </>
-  )
+  );
 }
