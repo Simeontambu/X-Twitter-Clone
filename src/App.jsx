@@ -7,13 +7,16 @@ import './style/App.css';
 
 export default function App() {
   return (
+    
     <Router>
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
+          
           <Route path="/:user" element={<Profile />} />
         </Routes>
-      </Layout>
+        </Layout>
     </Router>
+    
   );
 }

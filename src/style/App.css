@@ -205,13 +205,13 @@ body {
   font-family: "Inter", sans-serif;
   display: flex;
   flex-direction: column;
-
   justify-content: space-between;
 }
 
 .sidebar ul {
   list-style: none;
   padding: 0;
+ 
 }
 
 .sidebar ul li {
@@ -234,11 +234,10 @@ body {
   position: fixed;
   top: 0;
   bottom: 0;
-  overflow-y: auto;
 }
 
 .sidebar {
-  left: 60px;
+  left: 100px;
 }
 
 .sidebar-right {
@@ -265,6 +264,16 @@ body {
   background-color: #1d9bf0;
   color: white;
   font-size: 1rem;
+}
+
+/* style user sidebar left */
+.user-avatar {
+  margin-top: 20px;
+  display: flex;
+}
+.user-avatar-name .tweet-title-details {
+ margin-left: 23.5px;
+  
 }
 
 /* side bar right */
@@ -407,12 +416,4 @@ body {
 
 .show-more {
   margin-top: 20px;
-}
-
-.user-avatar {
-  margin-top: 20px;
-  display: flex;
-}
-.user-avatar-name .tweet-title-details {
-  margin-left: 150px;
 }
