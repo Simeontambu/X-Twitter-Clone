@@ -253,6 +253,10 @@ body {
   text-decoration: none;
   color: white;
 }
+.link{
+  text-decoration: none;
+}
+
 
 .button-sidebar {
   text-transform: capitalize;

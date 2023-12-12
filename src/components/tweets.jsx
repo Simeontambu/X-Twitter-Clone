@@ -1,8 +1,9 @@
-import React from "react"
-import Image from "./image"
-import TweetActions from "./tweetActions"
-import Verified from "./../images/Verified.svg"
-import tweetsData from "../tweet-data"
+import React from "react";
+import Image from "./image";
+import TweetActions from "./tweetActions";
+import Verified from "./../images/Verified.svg";
+import tweetsData from "../tweet-data";
+import { Link } from "react-router-dom";
 
 export default function Tweets() {
   return (
@@ -11,19 +12,28 @@ export default function Tweets() {
         {tweetsData.map((tweet, index) => {
           return (
             <div className="tweet" key={index}>
-              <Image
-                className="tweet-avatar"
-                src={tweet.profileUser}
-                alt="profile-image"
-              />
+              <Link to={`/${tweet.name}`}>
+                <Image
+                  className="tweet-avatar"
+                  src={tweet.profileUser}
+                  alt="profile-image"
+                />
+              </Link>
+
               <div className="tweet-content">
                 <div className="tweet-body">
                   <span className="tweet-title">
-                    <span className="tweet-title-author">{tweet.name}</span>
+                    <Link to={`/${tweet.name}`} className="link active">
+                      <span className="tweet-title-author">{tweet.name}</span>
+                    </Link>
                     <span>
-                    <Image src={Verified} />
+                      <Image src={Verified} />
                     </span>
-                    <span className="tweet-title-details">{tweet.author}</span>
+                    <Link to={`/${tweet.name}`} className="link">
+                      <span className="tweet-title-details">
+                        {tweet.author}
+                      </span>
+                    </Link>
                     <span className="tweet-title-details">{" . "}</span>
                     <span className="tweet-title-details">
                       {tweet.dateOrTime}
@@ -42,9 +52,9 @@ export default function Tweets() {
                 />
               </div>
             </div>
-          )
+          );
         })}
       </div>
     </>
-  )
+  );
 }
