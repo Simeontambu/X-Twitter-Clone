@@ -3,6 +3,7 @@ import Image from "./image";
 import TweetActions from "./tweetActions";
 import Verified from "./../images/Verified.svg";
 import tweetsData from "../tweet-data";
+import ReplyIcon from "./replyIcon";
 import { Link } from "react-router-dom";
 
 export default function Tweets() {
@@ -46,9 +47,9 @@ export default function Tweets() {
                   </div>
                 </div>
                 <TweetActions
-                  userComment={tweet.comments}
-                  userRetweet={tweet.retweets}
-                  userLove={tweet.likes}
+                  userComments={tweet.comments}
+                  userRetweets={tweet.retweets}
+                  userLikes={tweet.likes}
                 />
               </div>
             </div>
