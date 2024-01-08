@@ -234,6 +234,8 @@ body {
   position: fixed;
   top: 0;
   bottom: 0;
+  
+  
 }
 
 .sidebar {
@@ -259,6 +261,7 @@ body {
 .button-sidebar {
   text-transform: capitalize;
   width: 225px;
+  
   height: 52px;
   padding: 16px 0px;
   border: none;
