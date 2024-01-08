@@ -5,11 +5,14 @@ import SidebarRight from "./sidebarRight";
 function Layout({ children }) {
   return (
     <>
-    <Sidebar/>
+    
       <div className="left-sidebar" />
+      <Sidebar/>
       {children}
-      <div className="right-sidebar" />
       <SidebarRight/>
+      <div className="right-sidebar" />
+      
+     
     </>
   )
 }

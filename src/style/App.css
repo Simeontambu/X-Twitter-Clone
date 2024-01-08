@@ -14,7 +14,7 @@ body {
 }
 
 .timeline {
-  flex: 0 0 600px;
+  flex: 0 0 800px;
   font-family: "Inter", sans-serif;
   border-left: 1px solid #2f3336;
   border-right: 1px solid #2f3336;
@@ -84,7 +84,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  /*padding: 0.8rem 0;*/
   gap: 1rem;
 }
 
@@ -223,13 +222,11 @@ body {
   margin-right: 10px;
 }
 
-.sidebar,
+/* .sidebar,
 .sidebar-right {
   position: fixed;
   top: 0;
   bottom: 0;
-  
-  
 }
 
 .sidebar {
@@ -238,7 +235,7 @@ body {
 
 .sidebar-right {
   right: 0;
-}
+} */
 
 .logoX {
   margin-bottom: 20px;
@@ -255,7 +252,7 @@ body {
 .button-sidebar {
   text-transform: capitalize;
   width: 225px;
-  
+
   height: 52px;
   padding: 16px 0px;
   border: none;
@@ -278,7 +275,7 @@ body {
 
 .sidebar-right {
   padding-top: 1.5em;
-  /* margin-right: 25px; */
+
   padding-right: 10px;
 }
 
