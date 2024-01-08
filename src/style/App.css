@@ -14,7 +14,7 @@ body {
 }
 
 .timeline {
-  flex: 0 0 800px;
+  flex: 0 0 600px;
   font-family: "Inter", sans-serif;
   border-left: 1px solid #2f3336;
   border-right: 1px solid #2f3336;
@@ -211,7 +211,6 @@ body {
 .sidebar ul {
   list-style: none;
   padding: 0;
- 
 }
 
 .sidebar ul li {
@@ -219,11 +218,6 @@ body {
   align-items: center;
   margin-bottom: 20px;
 }
-
-/* .sidebar ul li:hover {
-  background-color: #202327;
-  border-radius: 50px;
-} */
 
 .spaceLogoLinkName {
   margin-right: 10px;
@@ -239,11 +233,11 @@ body {
 }
 
 .sidebar {
-  left: 100px;
+  left: 6.25em;
 }
 
 .sidebar-right {
-  right: -20px;
+  right: 0;
 }
 
 .logoX {
@@ -255,7 +249,7 @@ body {
   text-decoration: none;
   color: white;
 }
-.link{
+.link {
   text-decoration: none;
 }
 .button-sidebar {
@@ -277,19 +271,19 @@ body {
   display: flex;
 }
 .user-avatar-name .tweet-title-details {
- margin-left: 23.5px;
-  
+  margin-left: 23.5px;
 }
 
 /* side bar right */
 
 .sidebar-right {
-  width: 360px;
   padding-top: 1.5em;
+  /* margin-right: 25px; */
+  padding-right: 10px;
 }
 
 .sidebar-right input[type="text"] {
-  width: 330px;
+  width: 100%;
   padding: 10px;
   border: 1px solid;
   border-radius: 20px;
@@ -321,7 +315,6 @@ body {
 .trends,
 .who-to-follow {
   display: flex;
-  width: 330px;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
@@ -394,7 +387,7 @@ body {
 }
 
 .Trending .more {
-  padding: 0px 16px 0px 8px;
+  padding: 0px 9px 0px 0px;
 }
 
 .who-to-follow ul {
@@ -422,6 +415,3 @@ body {
 .show-more {
   margin-top: 20px;
 }
-
-
-
