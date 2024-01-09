@@ -205,6 +205,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: sticky;
+  height: 100%;
+  top: 0;
+ bottom: 0;
+ /* flex: 0 0 225px; */
 }
 
 .sidebar ul {
@@ -222,20 +227,11 @@ body {
   margin-right: 10px;
 }
 
-/* .sidebar,
 .sidebar-right {
-  position: fixed;
-  top: 0;
-  bottom: 0;
+ position: sticky;
+ height: 100%;
+ top: -300px;
 }
-
-.sidebar {
-  left: 6.25em;
-}
-
-.sidebar-right {
-  right: 0;
-} */
 
 .logoX {
   margin-bottom: 20px;
@@ -287,6 +283,8 @@ body {
   font-size: 1rem;
   margin-bottom: 20px;
   background-color: #202327;
+  position: sticky;
+ 
 }
 
 .sidebar-right input[type="text"]::placeholder {
