@@ -12,6 +12,7 @@ import logoBookmarks from "./../../images/Bookmarks.svg";
 import logoMessages from "./../../images/Messages.svg";
 export default function Navbar() {
   const { user } = useParams();
+  const username = user || "Bradley Ortis";
   return (
     <>
       <nav>
@@ -54,7 +55,7 @@ export default function Navbar() {
             </NavLink>
           </li>
           <li>
-            <NavLink to={`/${user}`} className="active">
+            <NavLink to={`/${username}`} className="active">
               <Image src={logoImage} className="spaceLogoLinkName" />
               <span>Profile</span>
             </NavLink>
