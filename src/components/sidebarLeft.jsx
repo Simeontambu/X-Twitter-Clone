@@ -56,10 +56,10 @@ export default function Sidebar() {
           <Button name="Tweet" className="button-sidebar" />
         </ul>
 
-        <div className=".user-setting">
+        <div className="user-setting">
           <Image className="avatar" src={Img} />
           <div className="">
-            <div className=".user-setting-name">
+            <div className="user-setting-name">
               <span>Bradley Ortis<Image src={Private}/></span>
 
               <span className=" tweet-title-details">...</span>
