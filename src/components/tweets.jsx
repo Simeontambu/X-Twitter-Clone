@@ -2,7 +2,7 @@ import React from "react";
 import Image from "./image";
 import TweetActions from "./tweetActions";
 import Verified from "./../images/Verified.svg";
-import tweetsData from "../tweet-data";
+import tweetsData from "../utils/tweetData";
 import ReplyIcon from "./replyIcon";
 import { Link } from "react-router-dom";
 

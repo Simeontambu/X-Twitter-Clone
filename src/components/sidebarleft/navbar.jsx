@@ -14,57 +14,59 @@ export default function Navbar() {
   const { user } = useParams();
   return (
     <>
-      <ul>
-        <Image src={logoX} className="logoX" />
-        <li>
-          <Image src={logoHome} className="spaceLogoLinkName" />
-          <NavLink to="/" className="active">
-            Home
-          </NavLink>
-        </li>
-        <li>
-          <Image src={logoExplore} className="spaceLogoLinkName" />
-          <NavLink to="" className="active">
-            Explore
-          </NavLink>
-        </li>
-        <li>
-          <Image src={logoNotifications} className="spaceLogoLinkName" />
-          <NavLink to="" className="active">
-            Notifications
-          </NavLink>
-        </li>
-        <li>
-          <Image src={logoMessages} className="spaceLogoLinkName" />
-          <NavLink to="" className="active">
-            Messages
-          </NavLink>
-        </li>
-        <li>
-          <Image src={logoBookmarks} className="spaceLogoLinkName" />
-          <NavLink to="" className="active">
-            Bookmarks
-          </NavLink>
-        </li>
-        <li>
-          <Image src={logoLists} className="spaceLogoLinkName" />
-          <NavLink to="" className="active">
-            Lists
-          </NavLink>
-        </li>
-        <li>
-          <Image src={logoImage} className="spaceLogoLinkName" />
-          <NavLink to={`/${user}`} className="active">
-            Profile
-          </NavLink>
-        </li>
-        <li>
-          <Image src={logoMore} className="spaceLogoLinkName" />
-          <NavLink to="" className="active">
-            More
-          </NavLink>
-        </li>
-      </ul>
+      <nav>
+        <ul>
+          <Image src={logoX} className="logoX" />
+          <li>
+            <NavLink to="/" className="active">
+              <Image src={logoHome} className="spaceLogoLinkName" />
+              <span>Home</span>
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="" className="active">
+              <Image src={logoExplore} className="spaceLogoLinkName" />
+              <span>Explore</span>
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="" className="active">
+              <Image src={logoNotifications} className="spaceLogoLinkName" />
+              <span>Notifications</span>
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="" className="active">
+              <Image src={logoMessages} className="spaceLogoLinkName" />
+              <span>Messages</span>
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="" className="active">
+              <Image src={logoBookmarks} className="spaceLogoLinkName" />
+              <span>Bookmarks</span>
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="" className="active">
+              <Image src={logoLists} className="spaceLogoLinkName" />
+              <span>Lists</span>
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to={`/${user}`} className="active">
+              <Image src={logoImage} className="spaceLogoLinkName" />
+              <span>Profile</span>
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="" className="active">
+              <Image src={logoMore} className="spaceLogoLinkName" />
+              <span>More</span>
+            </NavLink>
+          </li>
+        </ul>
+      </nav>
     </>
   );
 }

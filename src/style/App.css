@@ -222,7 +222,7 @@ body {
 .sidebar ul li {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+
 }
 
 .spaceLogoLinkName {
@@ -239,6 +239,18 @@ body {
 .active {
   text-decoration: none;
   color: white;
+  border-radius: 30px;
+  padding: .6rem;
+  font-weight: 600;
+  font-size: 1.1875rem;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+
+ 
+}
+.active:hover {
+ background-color: #1a1a1a;
 }
 .link {
   text-decoration: none;
@@ -268,8 +280,14 @@ body {
 .user-setting:hover{
   background-color: #1a1a1a;
 }
-.user-setting-name .user-setting-three-dot {
-  margin-left: 23.5px;
+ .user-setting-three-dot {
+  margin-left: 1.15em;
+}
+.user-setting-name{
+  display: flex;
+}
+.user-setting-icone{
+  display: flex;
 }
 
 /* side bar right */
@@ -418,4 +436,91 @@ body {
 
 .show-more {
   margin-top: 20px;
+}
+
+
+
+
+
+.profile .top-tweets{
+  display: none;
+}
+.cover-image{
+  width: 100%;
+  height: 200px;
+}
+.cover-image img{
+  width: 100%;
+  height: 100%;
+}
+.profile-photo{
+  height: 133.6px;
+  width: 133.6px;
+  flex:  133.6px;
+  position: absolute;
+  margin: -70px 0 0 1rem;
+}
+.profile-photo img{
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+.contenaire-profile-editor-button{
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  height: 60px;
+  padding: 1rem;
+}
+.profile-editor-button{
+  padding: .5rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 15px;
+  border: 1px solid #2F3336;
+  cursor: pointer;
+}
+.about-profile{
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+  padding: 1rem;
+}
+.profile-name{
+  font-size: var(--font-size-title-page);
+  font-weight: bold;
+}
+.user-contact-details, .community{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.location, .website-link, .year-account-opened{
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+.profle-actions{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #2F3336;
+  margin: 0;
+}
+.profle-action{
+  padding: 1rem 1.5rem;
+  color: var(--second-color-text);
+  font-weight: 500;
+  font-size: 1rem;
+}
+.profle-action:hover{
+  background-color: var(--primary-hover-link-background-color);
+}
+.profle-action span{
+  padding-bottom: .8rem;
+  border-bottom: .25rem solid transparent;
+}
+.profle-action .postes{
+  border-bottom: .25rem solid #1D9BF0;
 }
