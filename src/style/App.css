@@ -208,8 +208,10 @@ body {
   position: sticky;
   height: 100%;
   top: 0;
+
+ 
   
- /* flex: 0 0 225px; */
+
 }
 
 .sidebar ul {
@@ -243,10 +245,9 @@ body {
 }
 .button-sidebar {
   text-transform: capitalize;
-  width: 225px;
-
-  height: 52px;
-  padding: 16px 0px;
+ padding: .9rem 6rem;
+    margin: 1.2rem 0 14vh 0;
+  
   border: none;
   border-radius: 50px;
   background-color: #1d9bf0;
@@ -254,13 +255,20 @@ body {
   font-size: 1rem;
 }
 
-/* style user sidebar left */
+
 .user-setting {
-  margin-top: 100%;
+  margin-top: 6.25em;
   display: flex;
+  align-items: center;
+   
+    font-size: 1rem;
+    border-radius: 4rem;
  
 }
-.user-setting-name .tweet-title-details {
+.user-setting:hover{
+  background-color: #1a1a1a;
+}
+.user-setting-name .user-setting-three-dot {
   margin-left: 23.5px;
 }
 

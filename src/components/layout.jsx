@@ -1,7 +1,7 @@
 import React from "react"
 
-import Sidebar from './sidebarLeft';
-import SidebarRight from "./sidebarRight";
+import Sidebar from './sidebarleft/sidebarLeft';
+import SidebarRight from "./sidebarright/sidebarRight";
 function Layout({ children }) {
   return (
     <>
