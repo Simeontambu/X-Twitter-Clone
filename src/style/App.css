@@ -273,6 +273,7 @@ nav ul li .active:hover {
 
 
 .user-setting {
+  margin-left: 1.25em;
   margin-top: 5.90em;
   display: flex;
   align-items: center;

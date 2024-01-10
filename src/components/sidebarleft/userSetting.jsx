@@ -1,5 +1,5 @@
 import { NavLink,useParams } from "react-router-dom";
-import Img from "./../../images/profile-photo.svg";
+import Img from "./../../images/Profile-Photo-setting.svg";
 import Private from "./../../images/Private.svg";
 import Image from "../image";
 export default function UserSetting() {
@@ -9,7 +9,7 @@ export default function UserSetting() {
     <>
       <NavLink to={`/${username}`} className="active">
         <div className="user-setting">
-          <Image className="avatar" src={Img} />
+          <Image src={Img} />
           <div className="">
             <div className="user-setting-name">
               <div className="user-setting-icone">
