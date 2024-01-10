@@ -232,6 +232,7 @@ body {
 
 
 .logoX {
+  margin-left: 0.625em;
   margin-bottom: 20px;
   padding-top: 1.5em;
 }
@@ -272,7 +273,7 @@ nav ul li .active:hover {
 
 
 .user-setting {
-  margin-top: 6.25em;
+  margin-top: 5.90em;
   display: flex;
   align-items: center;
    
