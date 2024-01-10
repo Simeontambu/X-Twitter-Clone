@@ -9,6 +9,8 @@ export default function Profile() {
       <main className="timeline">
        
         <h2>User Profile: {user}</h2>
+        {/* <AboutProfile />
+            <ProfileActions /> */}
       </main>
       
     </>
