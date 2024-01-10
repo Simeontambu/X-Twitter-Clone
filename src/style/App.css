@@ -208,7 +208,7 @@ body {
   position: sticky;
   height: 100%;
   top: 0;
- bottom: 0;
+  
  /* flex: 0 0 225px; */
 }
 
@@ -227,11 +227,7 @@ body {
   margin-right: 10px;
 }
 
-.sidebar-right {
- position: sticky;
- height: 100%;
- top: -300px;
-}
+
 
 .logoX {
   margin-bottom: 20px;
@@ -259,11 +255,12 @@ body {
 }
 
 /* style user sidebar left */
-.user-avatar {
-  margin-top: 20px;
+.user-setting {
+  margin-top: 100%;
   display: flex;
+ 
 }
-.user-avatar-name .tweet-title-details {
+.user-setting-name .tweet-title-details {
   margin-left: 23.5px;
 }
 
@@ -271,6 +268,10 @@ body {
 
 .sidebar-right {
   padding-top: 1.5em;
+
+ position: sticky;
+ height: 100%;
+ top: -300px;
 
   padding-right: 10px;
 }
