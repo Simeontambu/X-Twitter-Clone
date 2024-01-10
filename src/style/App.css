@@ -430,6 +430,10 @@ nav ul li .active:hover {
   display: flex;
   margin-left: 10px;
 }
+.who-to-follow-icone{
+  display: flex;
+  align-items: center;
+}
 
 .who-to-follow ul .who-to-follow-name {
   display: flex;

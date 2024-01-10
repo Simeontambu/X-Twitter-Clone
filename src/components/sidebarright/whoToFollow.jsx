@@ -15,9 +15,13 @@ export default function WhoToFollow() {
                   <Image src={tweets[1].profileUser} />
                   <div>
                     <div className="who-to-follow-name">
+                      <div className="who-to-follow-icone">
                       <span>
-                        {tweets[1].name} <Image src={Verified} />
+                        {tweets[1].name}
                       </span>
+                      <Image src={Verified} />
+                      </div>
+                      
                       <button>Follow</button>
                     </div>
                     <span className="username tweet-title-details">
@@ -30,9 +34,12 @@ export default function WhoToFollow() {
                   <Image src={tweets[0].profileUser} />
                   <div>
                     <div className="who-to-follow-name">
+                    <div className="who-to-follow-icone">
                       <span>
-                        {tweets[0].name} <Image src={Verified} />{" "}
+                        {tweets[0].name}
                       </span>
+                      <Image src={Verified} />
+                      </div>
 
                       <button>Follow</button>
                     </div>
@@ -46,9 +53,12 @@ export default function WhoToFollow() {
                   <Image src={tweet.profileUser} />
                   <div>
                     <div className="who-to-follow-name">
+                    <div className="who-to-follow-icone">
                       <span>
-                        {tweet.name} <Image src={Verified} />
+                        {tweet.name}
                       </span>
+                      <Image src={Verified} />
+                      </div>
                       <button>Follow</button>
                     </div>
                     <span className="username tweet-title-details">
