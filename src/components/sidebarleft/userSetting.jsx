@@ -1,7 +1,7 @@
 import { NavLink,useParams } from "react-router-dom";
 import Img from "./../../images/Profile-Photo-setting.svg";
 import Private from "./../../images/Private.svg";
-import Image from "../image";
+import Image from "../timeline/home/image";
 export default function UserSetting() {
   const { user } = useParams();
   const username = user || "Bradley Ortis";

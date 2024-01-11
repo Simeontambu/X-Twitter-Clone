@@ -1,6 +1,6 @@
 import Navbar from "./navbar";
 import UserSetting from "./userSetting";
-import Button from "../button";
+import Button from "../timeline/home/button";
 
 export default function Sidebar() {
   return (

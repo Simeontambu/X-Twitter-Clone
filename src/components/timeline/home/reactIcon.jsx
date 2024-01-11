@@ -1,32 +1,32 @@
-import { useState } from "react";
-import React from "./../images/React.svg";
+import { useState } from "react"
+import React from "./../../../images/React.svg"
 
 export default function ReactIcone({ userLike }) {
-  const [isClicked, setIsClicked] = useState(false);
-  const [isHovered, setIsHovered] = useState(false);
+  const [isClicked, setIsClicked] = useState(false)
+  const [isHovered, setIsHovered] = useState(false)
 
   const handleClick = () => {
-    setIsClicked(!isClicked);
-  };
+    setIsClicked(!isClicked)
+  }
 
   const handleMouseEnter = () => {
-    setIsHovered(true);
-  };
+    setIsHovered(true)
+  }
 
   const handleMouseLeave = () => {
-    setIsHovered(false);
-  };
+    setIsHovered(false)
+  }
 
   const iconStyle = {
     borderRadius: "50%",
     padding: "10px",
     background: isClicked ? "" : isHovered ? "#200914" : " ",
-  };
+  }
 
   const clickStyle = {
     color: isClicked ? "#6E767D" : isHovered ? "#c1035b" : " ",
     padding: "10px",
-  };
+  }
 
   return (
     <div
@@ -57,5 +57,5 @@ export default function ReactIcone({ userLike }) {
         {userLike}
       </span>
     </div>
-  );
+  )
 }

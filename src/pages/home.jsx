@@ -1,7 +1,7 @@
-import React from "react";
-import Header from "../components/header";
-import Editor from "../components/tweetEditor";
-import Tweets from "../components/tweets";
+import React from "react"
+import Header from "../components/timeline/home/header"
+import Editor from "../components/timeline/home/tweetEditor"
+import Tweets from "../components/timeline/home/tweets"
 
 
 function Home() {
@@ -13,7 +13,7 @@ function Home() {
         <Tweets />
       </main>
     </>
-  );
+  )
 }
 
-export default Home;
+export default Home

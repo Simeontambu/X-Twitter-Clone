@@ -1,5 +1,5 @@
 import Image from "./image"
-import Img from "./../images/topTweet.png"
+import Img from "./../../../images/topTweet.png"
 
 export default function Header() {
   return (
@@ -8,5 +8,5 @@ export default function Header() {
 
       <Image className="top-tweets" src={Img} />
     </header>
-  );
+  )
 }

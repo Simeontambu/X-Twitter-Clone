@@ -1,10 +1,10 @@
-import React from "react";
-import Image from "./image";
-import TweetActions from "./tweetActions";
-import Verified from "./../images/Verified.svg";
-import tweetsData from "../utils/tweetData";
-import ReplyIcon from "./replyIcon";
-import { Link } from "react-router-dom";
+import React from "react"
+import Image from "./image"
+import TweetActions from "./tweetActions"
+import Verified from "./../../../images/Verified.svg"
+import tweetsData from "../../../utils/tweetData"
+import ReplyIcon from "./replyIcon"
+import { Link } from "react-router-dom"
 
 export default function Tweets() {
   return (
@@ -53,9 +53,9 @@ export default function Tweets() {
                 />
               </div>
             </div>
-          );
+          )
         })}
       </div>
     </>
-  );
+  )
 }

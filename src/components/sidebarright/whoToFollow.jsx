@@ -1,4 +1,4 @@
-import Image from "../image";
+import Image from "../timeline/home/image";
 import Verified from "./../../images/Verified.svg";
 import tweets from "../../utils/tweetData";
 

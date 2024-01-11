@@ -1,6 +1,6 @@
 import { NavLink, useParams } from "react-router-dom";
 
-import Image from "../image";
+import Image from "../timeline/home/image";
 import logoHome from "./../../images/Home-Fill.svg";
 import logoX from "./../../images/Twitter.svg";
 import logoExplore from "./../../images/Explore.svg";

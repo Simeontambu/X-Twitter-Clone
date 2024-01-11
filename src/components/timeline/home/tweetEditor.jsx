@@ -1,4 +1,4 @@
-import Images from "./../images/profile-photo.svg"
+import Images from "./../../../images/profile-photo.svg"
 import TweetEdiorActions from "./tweetEditorActions"
 import Image from "./image"
 import Button from "./button"

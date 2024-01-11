@@ -1,32 +1,32 @@
-import React from "react";
-import { useState } from "react";
+import React from "react"
+import { useState } from "react"
 
 export default function RetweetIcon({ userRetweet }) {
-  const [isClicked, setIsClicked] = useState(false);
-  const [isHovered, setIsHovered] = useState(false);
+  const [isClicked, setIsClicked] = useState(false)
+  const [isHovered, setIsHovered] = useState(false)
 
   const handleClick = () => {
-    setIsClicked(!isClicked);
-  };
+    setIsClicked(!isClicked)
+  }
 
   const handleMouseEnter = () => {
-    setIsHovered(true);
-  };
+    setIsHovered(true)
+  }
 
   const handleMouseLeave = () => {
-    setIsHovered(false);
-  };
+    setIsHovered(false)
+  }
 
   const iconStyle = {
     borderRadius: "50%",
     padding: "10px",
     background: isClicked ? "" : isHovered ? "#071a14" : " ",
-  };
+  }
 
   const clickStyle = {
     color: isClicked ? "#6E767D" : isHovered ? "#00ba7c" : " ",
     padding: "10px",
-  };
+  }
   return (
     <div
       className="tweet-action"
@@ -56,5 +56,5 @@ export default function RetweetIcon({ userRetweet }) {
         {userRetweet}
       </span>
     </div>
-  );
+  )
 }

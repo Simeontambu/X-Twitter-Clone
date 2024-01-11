@@ -1,6 +1,6 @@
-import TweetEditorInput from "./../tweetEditorInput";
-import Trends from "./trends";
-import WhoToFollow from "./whoToFollow";
+import Trends from "./trends"
+import WhoToFollow from "./whoToFollow"
+import TweetEditorInput from './../timeline/home/tweetEditorInput'
 
 export default function SidebarRight() {
   return (
@@ -15,5 +15,5 @@ export default function SidebarRight() {
       <Trends />
       <WhoToFollow />
     </div>
-  );
+  )
 }

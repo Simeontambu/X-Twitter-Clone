@@ -1,4 +1,4 @@
-import Image from "../image";
+import Image from "../timeline/home/image";
 import logoSetting from "./../../images/Options.svg";
 
 export default function Trends() {
