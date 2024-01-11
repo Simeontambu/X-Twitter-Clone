@@ -4,6 +4,7 @@ import logoX from "./../../src/images/logo-rond-twitter.svg";
 import logoNewYorkTime from "./../../src/images/logoNewYorkTime.svg";
 const tweetsData = [
   {
+    id:1,
     name: "CNN",
     content:
       "President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a major breakthrough that would serve to both strengthen the US steel industry and combat the global climate crisis.",
@@ -15,6 +16,7 @@ const tweetsData = [
     profileUser: Cnn,
   },
   {
+    id:2,
     name: "The New York Times",
     content:
       "Gardening boomed during the pandemic. Six Black writers share how it has helped them re-establish, and reimagine, a connection to cultivation and the land",
@@ -27,6 +29,7 @@ const tweetsData = [
     profileUser: logoNewYorkTime,
   },
   {
+    id:3,
     name: "Twitter",
     content: "BIG NEWS lol jk still Twitter",
     comments: "6.8K",
@@ -37,6 +40,7 @@ const tweetsData = [
     profileUser: logoX,
   },
   {
+    id:4,
     name: "Twitter",
     content: "hello literally everyone",
     comments: "118.7K",
@@ -47,6 +51,7 @@ const tweetsData = [
     profileUser: logoX,
   },
   {
+    id:5,
     name: "Twitter",
     content: "hello literally everyone",
     Img: Image,
