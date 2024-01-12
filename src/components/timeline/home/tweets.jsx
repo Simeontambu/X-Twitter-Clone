@@ -5,14 +5,16 @@ import Verified from "./../../../images/Verified.svg"
 import tweetsData from "../../../utils/tweetData"
 import ReplyIcon from "./replyIcon"
 import { Link } from "react-router-dom"
+import { useData } from "../../../hooks/useData"
 
 export default function Tweets() {
+  const tweets = useData()
   return (
     <>
       <div className="tweets">
-        {tweetsData.map((tweet, index) => {
+        {tweetsData.map(tweet => {
           return (
-            <div className="tweet" key={index}>
+            <div className="tweet" key={tweet.id}>
               <Link to={`/${tweet.name}`}>
                 <Image
                   className="tweet-avatar"

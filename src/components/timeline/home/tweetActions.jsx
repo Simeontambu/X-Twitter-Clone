@@ -1,3 +1,4 @@
+import { useData } from "../../../hooks/useData"
 import ReplyIcon from "./replyIcon"
 import RetweetIcon from "./retweetIcon"
 import ReactIcone from "./reactIcon"
@@ -8,6 +9,7 @@ export default function Tweetactions({
   userRetweets,
   userLikes,
 }) {
+  const tweetsUser = useData()
   return (
     <>
       <div className="tweet-actions">
