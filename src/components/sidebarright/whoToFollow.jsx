@@ -1,23 +1,26 @@
 import Image from "../timeline/home/image";
 import Verified from "./../../images/Verified.svg";
-import tweets from "../../utils/tweetData";
+
+import {useData} from './../../hooks/useData'
 
 export default function WhoToFollow() {
+  const tweets = useData()
+  const tweetdata = tweets.tweets;
   return (
     <div className="who-to-follow">
       <h3>Who to follow</h3>
       <ul>
-        {tweets.slice(0, 3).map((tweet, index) => (
+        {tweetdata.slice(0, 3).map((tweet, index) => (
           <>
             <li key={index}>
               {index === 0 ? (
                 <>
-                  <Image src={tweets[1].profileUser} />
+                  <Image src={tweetdata[1].profileUser} />
                   <div>
                     <div className="who-to-follow-name">
                       <div className="who-to-follow-icone">
                       <span>
-                        {tweets[1].name}
+                        {tweetdata[1].name}
                       </span>
                       <Image src={Verified} />
                       </div>
@@ -31,12 +34,12 @@ export default function WhoToFollow() {
                 </>
               ) : index === 1 ? (
                 <>
-                  <Image src={tweets[0].profileUser} />
+                  <Image src={tweetdata[0].profileUser} />
                   <div>
                     <div className="who-to-follow-name">
                     <div className="who-to-follow-icone">
                       <span>
-                        {tweets[0].name}
+                        {tweetdata[0].name}
                       </span>
                       <Image src={Verified} />
                       </div>

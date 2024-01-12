@@ -2,18 +2,18 @@ import { useData } from "../../../hooks/useData"
 
 export default function UserTweets() {
   const tweetsUser = useData()
-  const currentUser = tweetsUser.currentUser;
-  const tweetadata = tweetsUser.tweets;
+//   const currentUser = tweetsUser.currentUser;
+//   const tweetdata = tweetsUser.tweets;
 
   return (
     <>
-      {tweetadata.map((tweet) => {
+      {/* {tweetdata.map((tweet) => {
         return (
           <div key={tweet.id}>
             <h1>{tweet.author}</h1>
           </div>
         )
-      })}
+      })} */}
     </>
   )
 }

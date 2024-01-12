@@ -2,13 +2,13 @@ import React from "react"
 import Image from "./image"
 import TweetActions from "./tweetActions"
 import Verified from "./../../../images/Verified.svg"
-import tweetsData from "../../../utils/tweetData"
 import ReplyIcon from "./replyIcon"
 import { Link } from "react-router-dom"
 import { useData } from "../../../hooks/useData"
 
 export default function Tweets() {
   const tweets = useData()
+  const tweetsData = tweets.tweets;
   return (
     <>
       <div className="tweets">
