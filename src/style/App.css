@@ -201,6 +201,7 @@ body {
 
 /* side bar left */
 .sidebar {
+  flex: 0 0 275px;
   font-family: "Inter", sans-serif;
   display: flex;
   flex-direction: column;
@@ -273,12 +274,14 @@ nav ul li .active:hover {
   font-size: 1rem;
   border-radius: 4rem;
   padding: 0.7em;
+  bottom: 0;
+  top: 0;
 }
 .user-setting:hover {
   background-color: #1a1a1a;
 }
 .user-setting-three-dot {
-  margin-left: 1.15em;
+  margin-left: 3.5em;
 }
 .user-setting-name {
   display: flex;
