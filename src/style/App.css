@@ -14,7 +14,7 @@ body {
 }
 
 .timeline {
-  flex: 0 0 800px;
+  flex: 0 0 600px;
   font-family: "Inter", sans-serif;
   border-left: 1px solid #2f3336;
   border-right: 1px solid #2f3336;
@@ -208,10 +208,7 @@ body {
   position: sticky;
   height: 100%;
   top: 0;
-
- 
-  
-
+  bottom: 0;
 }
 
 .sidebar ul {
@@ -222,21 +219,18 @@ body {
 .sidebar ul li {
   display: flex;
   align-items: center;
-
 }
 
 .spaceLogoLinkName {
   margin-right: 10px;
 }
 
-
-
 .logoX {
   margin-left: 0.625em;
   margin-bottom: 20px;
   padding-top: 1.5em;
 }
- .active {
+.active {
   text-decoration: none;
   color: white;
 }
@@ -245,7 +239,7 @@ nav ul li .active {
   text-decoration: none;
   color: white;
   border-radius: 30px;
-  padding: .6rem;
+  padding: 0.6rem;
   font-weight: 600;
   font-size: 1.1875rem;
   display: flex;
@@ -254,16 +248,16 @@ nav ul li .active {
 }
 
 nav ul li .active:hover {
- background-color: #1a1a1a;
+  background-color: #1a1a1a;
 }
 .link {
   text-decoration: none;
 }
 .button-sidebar {
   text-transform: capitalize;
- padding: .9rem 6rem;
-    margin: 1.2rem 0 14vh 0;
-  
+  padding: 0.9rem 6rem;
+  margin: 1.2rem 0 14vh 0;
+
   border: none;
   border-radius: 50px;
   background-color: #1d9bf0;
@@ -271,27 +265,25 @@ nav ul li .active:hover {
   font-size: 1rem;
 }
 
-
 .user-setting {
   margin-left: 1.25em;
-  margin-top: 5.90em;
   display: flex;
   align-items: center;
-   
-    font-size: 1rem;
-    border-radius: 4rem;
- 
+
+  font-size: 1rem;
+  border-radius: 4rem;
+  padding: 0.7em;
 }
-.user-setting:hover{
+.user-setting:hover {
   background-color: #1a1a1a;
 }
- .user-setting-three-dot {
+.user-setting-three-dot {
   margin-left: 1.15em;
 }
-.user-setting-name{
+.user-setting-name {
   display: flex;
 }
-.user-setting-icone{
+.user-setting-icone {
   display: flex;
 }
 
@@ -300,9 +292,9 @@ nav ul li .active:hover {
 .sidebar-right {
   padding-top: 1.5em;
 
- position: sticky;
- height: 100%;
- top: -300px;
+  position: sticky;
+  height: 100%;
+  top: -300px;
 
   padding-right: 10px;
 }
@@ -316,7 +308,6 @@ nav ul li .active:hover {
   margin-bottom: 20px;
   background-color: #202327;
   position: sticky;
- 
 }
 
 .sidebar-right input[type="text"]::placeholder {
@@ -431,7 +422,7 @@ nav ul li .active:hover {
   display: flex;
   margin-left: 10px;
 }
-.who-to-follow-icone{
+.who-to-follow-icone {
   display: flex;
   align-items: center;
 }
@@ -447,92 +438,88 @@ nav ul li .active:hover {
   margin-top: 20px;
 }
 
-
-
-
-
-
-
-
-.profile .top-tweets{
+.profile .top-tweets {
   display: none;
 }
-.cover-image{
+.cover-image {
   width: 100%;
   height: 200px;
 }
-.cover-image img{
+.cover-image img {
   width: 100%;
   height: 100%;
 }
-.profile-photo{
+.profile-photo {
   height: 133.6px;
   width: 133.6px;
-  flex:  133.6px;
+  flex: 133.6px;
   position: absolute;
   margin: -70px 0 0 1rem;
 }
-.profile-photo img{
+.profile-photo img {
   width: 100%;
   height: 100%;
   border-radius: 100%;
 }
-.contenaire-profile-editor-button{
+.contenaire-profile-editor-button {
   display: flex;
   align-items: center;
   justify-content: right;
   height: 60px;
   padding: 1rem;
 }
-.profile-editor-button{
-  padding: .5rem 1rem;
+.profile-editor-button {
+  padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: bold;
   background-color: transparent;
   color: #fff;
   border-radius: 15px;
-  border: 1px solid #2F3336;
+  border: 1px solid #2f3336;
   cursor: pointer;
 }
-.about-profile{
+.about-profile {
   display: flex;
   flex-direction: column;
-  gap: .6rem;
+  gap: 0.6rem;
   padding: 1rem;
 }
-.profile-name{
+.profile-name {
   font-size: var(--font-size-title-page);
   font-weight: bold;
 }
-.user-contact-details, .community{
+.user-contact-details,
+.community {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
-.location, .website-link, .year-account-opened{
+.location,
+.website-link,
+.year-account-opened {
   display: flex;
   align-items: center;
-  gap: .5rem;
+  gap: 0.5rem;
 }
-.profle-actions{
+.profle-actions {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #2F3336;
+  border-bottom: 1px solid #2f3336;
   margin: 0;
 }
-.profle-action{
+.profle-action {
   padding: 1rem 1.5rem;
   color: var(--second-color-text);
   font-weight: 500;
   font-size: 1rem;
 }
-.profle-action:hover{
+.profle-action:hover {
   background-color: var(--primary-hover-link-background-color);
 }
-.profle-action span{
-  padding-bottom: .8rem;
-  border-bottom: .25rem solid transparent;
+.profle-action span {
+  padding-bottom: 0.8rem;
+  border-bottom: 0.25rem solid transparent;
 }
-.profle-action .postes{
-  border-bottom: .25rem solid #1D9BF0;
+.profle-action .postes {
+  border-bottom: 0.25rem solid #1d9bf0;
 }
