@@ -4,18 +4,14 @@ import RetweetIcon from "./retweetIcon"
 import ReactIcone from "./reactIcon"
 import ShareIcon from "./shareIcon"
 
-export default function Tweetactions({
-  userComments,
-  userRetweets,
-  userLikes,
-}) {
-  const tweetsUser = useData()
+export default function Tweetactions() {
+
   return (
     <>
       <div className="tweet-actions">
-        <ReplyIcon userComment={userComments} />
-        <RetweetIcon userRetweet={userRetweets} />
-        <ReactIcone userLike={userLikes} />
+        <ReplyIcon />
+        <RetweetIcon />
+        <ReactIcone />
         <ShareIcon />
       </div>
     </>

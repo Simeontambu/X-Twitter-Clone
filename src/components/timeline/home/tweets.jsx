@@ -1,18 +1,18 @@
-import React from "react"
-import Image from "./image"
-import TweetActions from "./tweetActions"
-import Verified from "./../../../images/Verified.svg"
-import ReplyIcon from "./replyIcon"
-import { Link } from "react-router-dom"
-import { useData } from "../../../hooks/useData"
+import React from "react";
+import Image from "./image";
+import TweetActions from "./tweetActions";
+import Verified from "./../../../images/Verified.svg";
+import { Link } from "react-router-dom";
+import { useData } from "../../../hooks/useData";
+import { tweetMap } from "../../../hooks/useMap";
 
 export default function Tweets() {
-  const tweets = useData()
+  const tweets = useData();
   const tweetsData = tweets.tweets;
   return (
     <>
       <div className="tweets">
-        {tweetsData.map(tweet => {
+        {tweetsData.map((tweet) => {
           return (
             <div className="tweet" key={tweet.id}>
               <Link to={`/${tweet.name}`}>
@@ -48,16 +48,15 @@ export default function Tweets() {
                     {tweet.Img && <Image src={tweet.Img} />}
                   </div>
                 </div>
-                <TweetActions
-                  userComments={tweet.comments}
-                  userRetweets={tweet.retweets}
-                  userLikes={tweet.likes}
-                />
+                {/* here we provide the data already mapped  */}
+                <tweetMap.Provider value={tweet}>
+                  <TweetActions />
+                </tweetMap.Provider>
               </div>
             </div>
-          )
+          );
         })}
       </div>
     </>
-  )
+  );
 }

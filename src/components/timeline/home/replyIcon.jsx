@@ -1,32 +1,36 @@
-import React from "react"
-import { useState } from "react"
+import React from "react";
+import { useState } from "react";
+import { useMap } from "../../../hooks/useMap";
 
-export default function ReplyIcon({ userComment }) {
-  const [isClicked, setIsClicked] = useState(false)
-  const [isHovered, setIsHovered] = useState(false)
+export default function ReplyIcon() {
+  const [isClicked, setIsClicked] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
+
+  // the data that we use in this context this already map
+  const tweets = useMap();
 
   const handleClick = () => {
-    setIsClicked(!isClicked)
-  }
+    setIsClicked(!isClicked);
+  };
 
   const handleMouseEnter = () => {
-    setIsHovered(true)
-  }
+    setIsHovered(true);
+  };
 
   const handleMouseLeave = () => {
-    setIsHovered(false)
-  }
+    setIsHovered(false);
+  };
 
   const iconStyle = {
     borderRadius: "50%",
     padding: "10px",
     background: isClicked ? "" : isHovered ? "#0a171f" : " ",
-  }
+  };
 
   const clickStyle = {
     color: isClicked ? "#6E767D" : isHovered ? "#1d9bf0" : " ",
     padding: "10px",
-  }
+  };
 
   return (
     <div
@@ -54,8 +58,8 @@ export default function ReplyIcon({ userComment }) {
         </span>
       </span>
       <span className="details-count-icon-coment" style={clickStyle}>
-        {userComment}
+        {tweets.comments}
       </span>
     </div>
-  )
+  );
 }
