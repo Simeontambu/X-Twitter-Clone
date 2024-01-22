@@ -72,6 +72,14 @@ body {
   resize: none;
   padding: 10px 0 0 0;
   margin: 13px 0;
+  overflow: hidden;
+ 
+ 
+}
+.tweet-editor-input::placeholder{
+  font-family: "SF Pro Text";
+  font-weight: 400;
+  line-height: normal;
 }
 
 .tweet-editor-buttons {
