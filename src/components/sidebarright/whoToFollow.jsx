@@ -4,8 +4,8 @@ import Verified from "./../../images/Verified.svg";
 import {useData} from './../../hooks/useData'
 
 export default function WhoToFollow() {
-  const tweets = useData()
-  const tweetdata = tweets.tweets;
+  const {data} = useData()
+  const tweetdata = data.tweets;
   return (
     <div className="who-to-follow">
       <h3>Who to follow</h3>

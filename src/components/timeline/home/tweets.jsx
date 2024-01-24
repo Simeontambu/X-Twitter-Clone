@@ -6,9 +6,13 @@ import { Link } from "react-router-dom";
 import { useData } from "../../../hooks/useData";
 import { tweetMap } from "../../../hooks/useMap";
 
+
 export default function Tweets() {
-  const tweets = useData();
-  const tweetsData = tweets.tweets;
+  const {data} = useData();
+  const tweetsData = data.tweets;
+
+
+ 
   return (
     <>
       <div className="tweets">
@@ -59,4 +63,7 @@ export default function Tweets() {
       </div>
     </>
   );
+}
+export const addTweets =()=>{
+  return 
 }
