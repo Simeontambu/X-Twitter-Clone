@@ -1,11 +1,11 @@
-import Image from "../timeline/home/image";
-import Verified from "./../../images/Verified.svg";
+import Image from "../timeline/home/image"
+import Verified from "./../../images/Verified.svg"
 
-import {useData} from './../../hooks/useData'
+import { useData } from "./../../hooks/useData"
 
 export default function WhoToFollow() {
-  const {data} = useData()
-  const tweetdata = data.tweets;
+  const { data, tweeetPicture, newYorkTime, cnn } = useData()
+  const tweetdata = data.tweets
   return (
     <div className="who-to-follow">
       <h3>Who to follow</h3>
@@ -15,57 +15,49 @@ export default function WhoToFollow() {
             <li key={index}>
               {index === 0 ? (
                 <>
-                  <Image src={tweetdata[1].profileUser} />
+                  <Image src={newYorkTime} />
                   <div>
                     <div className="who-to-follow-name">
                       <div className="who-to-follow-icone">
-                      <span>
-                        {tweetdata[1].name}
-                      </span>
-                      <Image src={Verified} />
-                      </div>
-                      
-                      <button>Follow</button>
-                    </div>
-                    <span className="username tweet-title-details">
-                      {tweet.author}
-                    </span>
-                  </div>
-                </>
-              ) : index === 1 ? (
-                <>
-                  <Image src={tweetdata[0].profileUser} />
-                  <div>
-                    <div className="who-to-follow-name">
-                    <div className="who-to-follow-icone">
-                      <span>
-                        {tweetdata[0].name}
-                      </span>
-                      <Image src={Verified} />
+                        <span>The New York Times</span>
+                        <Image src={Verified} />
                       </div>
 
                       <button>Follow</button>
                     </div>
                     <span className="username tweet-title-details">
-                      {tweet.author}
+                      @nytimes
                     </span>
+                  </div>
+                </>
+              ) : index === 1 ? (
+                <>
+                  <Image src={cnn} />
+                  <div>
+                    <div className="who-to-follow-name">
+                      <div className="who-to-follow-icone">
+                        <span>CNN</span>
+                        <Image src={Verified} />
+                      </div>
+
+                      <button>Follow</button>
+                    </div>
+                    <span className="username tweet-title-details">@CNN</span>
                   </div>
                 </>
               ) : (
                 <>
-                  <Image src={tweet.profileUser} />
+                  <Image src={tweeetPicture} />
                   <div>
                     <div className="who-to-follow-name">
-                    <div className="who-to-follow-icone">
-                      <span>
-                        {tweet.name}
-                      </span>
-                      <Image src={Verified} />
+                      <div className="who-to-follow-icone">
+                        <span>Twitter</span>
+                        <Image src={Verified} />
                       </div>
                       <button>Follow</button>
                     </div>
                     <span className="username tweet-title-details">
-                      {tweet.author}
+                      @Twitter
                     </span>
                   </div>
                 </>
@@ -78,5 +70,5 @@ export default function WhoToFollow() {
         Show more
       </a>
     </div>
-  );
+  )
 }
