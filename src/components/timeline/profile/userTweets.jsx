@@ -4,7 +4,7 @@ import { useData } from "../../../hooks/useData"
 import Image from "../home/image";
 import TweetActions from "../home/tweetActions";
 import Verified from "./../../../images/Verified.svg";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 import { tweetMap } from "../../../hooks/useMap";
 
@@ -14,13 +14,11 @@ export default function UserTweets() {
   const {data} = useData()
   const currentUser = data.currentUser
   const tweets = data.tweets
+  const { user } = useParams();
+ console.log(user)
+  const filteredTweets = tweets.filter((tweet) => tweet.name === user);
 
-  const filteredTweets = tweets.filter((tweet) => tweet.name ===currentUser.pseudo );
-
-  // return {
-  //   currentUser,
-  //   tweets: filteredTweets, 
-  // };
+  
 
   return (
     <>
