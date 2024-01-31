@@ -1,8 +1,8 @@
 {
-    "current-user": {
+    "currentUser": {
         "id": "1",
         "coverPhoto": "src/images/tweet-image.png",
-        "profilePicture": "src/images/profile-photo.png",
+        "profilePicture": "src/images/profile-photo.svg",
         "pseudo": "Bradley Ortiz",
         "userName": "@bradleyOrtiz",
         "biography": "dev",
