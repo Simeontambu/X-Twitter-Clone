@@ -13,7 +13,7 @@ export default function UserSetting() {
           <div className="">
             <div className="user-setting-name">
               <div className="user-setting-icone">
-                <span> Bradley Ortis</span>
+                <span> Bradley Ortiz</span>
 
                 <Image src={Private} />
                 <span className="user-setting-three-dot">...</span>

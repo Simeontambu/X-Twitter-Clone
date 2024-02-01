@@ -12,7 +12,8 @@ import logoBookmarks from "./../../images/Bookmarks.svg";
 import logoMessages from "./../../images/Messages.svg";
 export default function Navbar() {
   const { user } = useParams();
-  const username = user || "Bradley Ortis";
+  const username = user || "Bradley Ortiz";
+  console.log(username)
   return (
     <>
       <nav>
