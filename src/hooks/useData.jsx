@@ -14,6 +14,13 @@ export function useData() {
 
 export function DataContextProvider({ children }) {
   const [data, setData] = useState(fileJson);
+  // const [data, setData] = useState(
+  //   fileJson.tweetS.map((tweet) => ({ ...tweet, isLiked: false }))
+  // );
+  //use state for action buttons
+
+  // const [isClicked, setIsClicked] = useState(false);
+  const [isLiked, setIsLiked] = useState(false);
 
   // Function to add tweet to tweet list
 
@@ -25,7 +32,17 @@ export function DataContextProvider({ children }) {
     });
   };
 
-  const value = { data, addTweet, tweeetPicture, newYorkTime, cnn };
+  const value = {
+    data,
+    addTweet,
+    tweeetPicture,
+    newYorkTime,
+    cnn,
+
+    isLiked,
+
+    setIsLiked,
+  };
 
   return <DataContext.Provider value={value}>{children}</DataContext.Provider>;
 }
