@@ -6,7 +6,7 @@
         "pseudo": "Bradley Ortiz",
         "userName": "@bradleyOrtiz",
         "biography": "dev",
-        "location": "Kinshasa",
+        "city": "Kinshasa",
         "websiteLink": "bradleyOrtiz.fr",
         "yearJoined": "January 2018",
         "numberSubscriptions": "65",
@@ -23,7 +23,14 @@
             "dateOrTime": "7m",
             "author": "@CNN",
             "profileUser": "../../src/images/tweet-profile-photo.svg",
-            "isLiked": false
+            "isLiked": false,
+            "biography": "dev",
+            "city": "Kinshasa",
+            "websiteLink": "bradleyOrtiz.fr",
+            "yearJoined": "January 2018",
+            "numberSubscriptions": "65",
+            "numberSubscribers": "9",
+            "coverPhoto": "src/images/tweet-image.png"
         },
         {
             "id": 2,
@@ -36,7 +43,14 @@
             "dateOrTime": "2h",
             "author": "@nytimes",
             "profileUser": "../../src/images/logoNewYorkTime.svg",
-            "isLiked": false
+            "isLiked": false,
+            "biography": "dev",
+            "city": "Kinshasa",
+            "websiteLink": "bradleyOrtiz.fr",
+            "yearJoined": "January 2018",
+            "numberSubscriptions": "65",
+            "numberSubscribers": "9",
+            "coverPhoto": "src/images/tweet-image.png"
         },
         {
             "id": 3,
@@ -48,7 +62,14 @@
             "dateOrTime": "Oct 20",
             "author": "@Twitter",
             "profileUser": "../../src/images/logo-rond-twitter.svg",
-            "isLiked": false
+            "isLiked": false,
+            "biography": "dev",
+            "city": "Kinshasa",
+            "websiteLink": "bradleyOrtiz.fr",
+            "yearJoined": "January 2018",
+            "numberSubscriptions": "65",
+            "numberSubscribers": "9",
+            "coverPhoto": "src/images/tweet-image.png"
         },
         {
             "id": 4,
@@ -60,7 +81,14 @@
             "dateOrTime": "Oct 4",
             "author": "@Twitter",
             "profileUser": "../../src/images/logo-rond-twitter.svg",
-            "isLiked": false
+            "isLiked": false,
+            "biography": "dev",
+            "city": "Kinshasa",
+            "websiteLink": "bradleyOrtiz.fr",
+            "yearJoined": "January 2018",
+            "numberSubscriptions": "65",
+            "numberSubscribers": "9",
+            "coverPhoto": "src/images/tweet-image.png"
         },
         {
             "id": 5,
@@ -73,7 +101,14 @@
             "dateOrTime": "Oct 4",
             "author": "@twitter",
             "profileUser": "../../src/images/logo-rond-twitter.svg",
-            "isLiked": false
+            "isLiked": false,
+            "biography": "dev",
+            "city": "Kinshasa",
+            "websiteLink": "bradleyOrtiz.fr",
+            "yearJoined": "January 2018",
+            "numberSubscriptions": "65",
+            "numberSubscribers": "9",
+            "coverPhoto": "src/images/tweet-image.png"
         }
     ]
 }

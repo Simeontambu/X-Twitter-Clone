@@ -1,3 +1,5 @@
+
+
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
 
 body {
@@ -447,4 +449,70 @@ nav ul li .active:hover {
 
 .show-more {
   margin-top: 20px;
+}
+
+
+
+/* Profile page */
+
+
+.navbar-profile{
+  border-bottom: 1px solid #2f3336;
+}
+.navbar-profile ul{
+  display: flex;
+  list-style: none;
+ 
+  justify-content: space-around;
+  
+}
+.navbar-profile ul li{
+  
+  padding: 0.5rem 1rem;
+  
+}
+.navbar-profile-color{
+  
+  color: white;
+  border-bottom: 4px solid #1d9bf0;
+  border-radius: 1px;
+  
+}
+
+.profile-cover{
+  width: 100%;
+    height: 200px;
+}
+.profile-cover img {
+  width: 100%;
+  height: 100%;
+}
+.profile-photo {
+  height: 133.6px;
+  width: 133.6px;
+  flex: 133.6px;
+  position: absolute;
+  margin: -70px 0 0 1rem;
+}
+.profile-photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  border: #f5f5f5 3px solid;
+ 
+}
+.about-profile {
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+  padding: 1rem;
+  margin: 70px 0 0 0;
+}
+
+
+.city-joined,.subscrib{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+   
 }

@@ -4,7 +4,7 @@ import Private from "./../../images/Private.svg";
 import Image from "../timeline/home/image";
 export default function UserSetting() {
   const { user } = useParams();
-  const username = user || "Bradley Ortis";
+  const username = user || "Bradley Ortiz";
   return (
     <>
       <NavLink to={`/${username}`} className="active">

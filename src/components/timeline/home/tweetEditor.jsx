@@ -5,7 +5,7 @@ import TweetForm from "./tweetForm"
 
 export default function Editor() {
   const { user } = useParams()
-  const username = user || "Bradley Ortis"
+  const username = user || "Bradley Ortiz"
   return (
     <>
       <div className="tweet-editor">

@@ -12,10 +12,10 @@ import { tweetMap } from "../../../hooks/useMap";
 export default function UserTweets() {
   
   const {data} = useData()
-  const currentUser = data.currentUser
+ 
   const tweets = data.tweets
   const { user } = useParams();
- console.log(user)
+
   const filteredTweets = tweets.filter((tweet) => tweet.name === user);
 
   
