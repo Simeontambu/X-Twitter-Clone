@@ -506,7 +506,7 @@ nav ul li .active:hover {
   flex-direction: column;
   gap: .6rem;
   padding: 1rem;
-  margin: 70px 0 0 0;
+  margin: 30px 0 0 0;
 }
 
 
@@ -515,4 +515,17 @@ nav ul li .active:hover {
     align-items: center;
     gap: .5rem;
    
+}
+.profile-edit-button{
+  /* display: flex; */
+  justify-content: space-between;
+  text-transform: capitalize;
+  padding: 0.3rem 1.5rem;
+  border-radius: 50px;
+  color: white;
+  font-size: 1rem;
+  margin-left: 450px;
+  margin-top: 8px;
+  background-color: black;
+  color: white;
 }

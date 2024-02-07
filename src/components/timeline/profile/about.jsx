@@ -2,7 +2,9 @@ import Image from "../home/image"
 import { useData } from "../../../hooks/useData"
 import { Link, useParams } from "react-router-dom"
 import Button from "../home/button"
+
 export default function About() {
+
   const { data } = useData()
   const currentUser = data.currentUser
 
@@ -14,14 +16,18 @@ export default function About() {
 
   return (
     <>
+
+
+    
       {currentUser.pseudo === user && (
         <div>
           <div className="profile-cover">
             <Image />
           </div>
-          <div>
+          <div >
             <Image src={currentUser.profilePicture} className="profile-photo" />
           </div>
+            <Button name="Edit profile" className="profile-edit-button"/>
 
           <div className="about-profile">
             <span>{currentUser.pseudo}</span>
@@ -53,6 +59,7 @@ export default function About() {
                   <Image />
                 </div>
                 <Image src={tweet.profileUser} className="profile-photo" />
+                <Button name="Follow" className="profile-edit-button"/>
                 <div className="about-profile">
                   <span>{tweet.name}</span>
                   <span className="tweet-title-details">{tweet.author}</span>
@@ -77,6 +84,10 @@ export default function About() {
           )
         })}
       </div>
+
+
+
+
     </>
   )
 }
