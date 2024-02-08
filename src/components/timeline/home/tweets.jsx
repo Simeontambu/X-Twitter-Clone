@@ -1,18 +1,15 @@
-import React from "react";
-import Image from "./image";
-import TweetActions from "./tweetActions";
-import Verified from "./../../../images/Verified.svg";
-import { Link } from "react-router-dom";
-import { useData } from "../../../hooks/useData";
-import { tweetMap } from "../../../hooks/useMap";
-
+import React from "react"
+import Image from "./image"
+import TweetActions from "./tweetActions"
+import Verified from "./../../../images/Verified.svg"
+import { Link } from "react-router-dom"
+import { useData } from "../../../hooks/useData"
+import { tweetMap } from "../../../hooks/useMap"
 
 export default function Tweets() {
-  const {data} = useData();
-  const tweetsData = data.tweets;
+  const { data } = useData()
+  const tweetsData = data.tweets
 
-
- 
   return (
     <>
       <div className="tweets">
@@ -58,12 +55,12 @@ export default function Tweets() {
                 </tweetMap.Provider>
               </div>
             </div>
-          );
+          )
         })}
       </div>
     </>
-  );
+  )
 }
-export const addTweets =()=>{
-  return 
+export const addTweets = () => {
+  return
 }

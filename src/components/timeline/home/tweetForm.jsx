@@ -1,20 +1,27 @@
+import React from "react"
 import { useState } from "react"
+import { useForm } from "react-hook-form"
 import Button from "./button"
 import TweetEdiorActions from "./tweetEditorActions"
 import { useData } from "../../../hooks/useData"
 
 export default function TweetForm({ ...props }) {
-  const [content, setContent] = useState("")
   const { addTweet, data } = useData()
   const currentUser = data.currentUser
   const tweets = data.tweets
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
+  const {
+    register,
+    formState: { errors },
+    handleSubmit,
+    reset,
+  } = useForm()
+  console.log(useForm())
+  const onSubmit = (data) => {
     const newTweet = {
       id: tweets.length + 1,
       name: currentUser.pseudo,
-      content: content,
+      content: data.tweet,
       comments: 0,
       retweets: 0,
       likes: 0,
@@ -22,18 +29,28 @@ export default function TweetForm({ ...props }) {
       author: currentUser.userName,
       profileUser: currentUser.profilePicture,
     }
-   
+
     addTweet(newTweet)
-    setContent("")
+    reset()
   }
 
+  const style = {
+    background: "red",
+  }
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit(onSubmit)}>
       <textarea
         {...props}
-        value={content}
-        onChange={(e) => setContent(e.target.value)}
+        name="tweet"
+        {...register("tweet", {
+          required: "Ce champ est obligatoire",
+          maxLength: {
+            value: 180,
+            message: "Le tweet ne doit pas dépasser 180 caractères",
+          },
+        })}
       />
+      {errors.tweet && <span style={style}>{errors.tweet?.message}</span>}
       <div className="tweet-editor-buttons">
         <div className="tweet-editor-actions">
           <TweetEdiorActions />

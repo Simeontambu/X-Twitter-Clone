@@ -14,7 +14,7 @@
   },
   "tweets": [
     {
-      "id": 1,
+      "id": "1",
       "name": "CNN",
       "content": "President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a major breakthrough that would serve to both strengthen the US steel industry and combat the global climate crisis.",
       "comments": 57,
@@ -33,7 +33,7 @@
       "coverPhoto": "src/images/tweet-image.png"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "The New York Times",
       "content": "Gardening boomed during the pandemic. Six Black writers share how it has helped them re-establish, and reimagine, a connection to cultivation and the land",
       "Img": "../../src/images/tweet-image1.png",
@@ -53,7 +53,7 @@
       "coverPhoto": "src/images/tweet-image.png"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Twitter",
       "content": "BIG NEWS lol jk still Twitter",
       "comments": "6.8K",
@@ -72,7 +72,7 @@
       "coverPhoto": "src/images/tweet-image.png"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Twitter",
       "content": "hello literally everyone",
       "comments": "118.7K",
@@ -91,7 +91,7 @@
       "coverPhoto": "src/images/tweet-image.png"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Twitter",
       "content": "hello literally everyone",
       "Img": "../../src/images/tweet-image1.png",
@@ -111,7 +111,7 @@
       "coverPhoto": "src/images/tweet-image.png"
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Twitter",
       "content": "hello literally everyone",
       "Img": "../../src/images/tweet-image1.png",
@@ -131,7 +131,7 @@
       "coverPhoto": "src/images/tweet-image.png"
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "Twitter",
       "content": "hello literally everyone",
       "Img": "../../src/images/tweet-image1.png",
@@ -151,7 +151,7 @@
       "coverPhoto": "src/images/tweet-image.png"
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "Bradley Ortiz",
       "content": "fgjhfgjkfgjkfgk",
       "comments": 0,
@@ -162,7 +162,7 @@
       "profileUser": "src/images/profile-photo.svg"
     },
     {
-      "id": 9,
+      "id": "9",
       "name": "Bradley Ortiz",
       "content": "fjhfjfjkfjk",
       "comments": 0,
@@ -173,7 +173,7 @@
       "profileUser": "src/images/profile-photo.svg"
     },
     {
-      "id": 10,
+      "id": "10",
       "name": "Bradley Ortiz",
       "content": "djhfjhfjhf",
       "comments": 0,
@@ -184,7 +184,7 @@
       "profileUser": "src/images/profile-photo.svg"
     },
     {
-      "id": 11,
+      "id": "11",
       "name": "Bradley Ortiz",
       "content": "fjhfgjg",
       "comments": 0,
@@ -195,7 +195,7 @@
       "profileUser": "src/images/profile-photo.svg"
     },
     {
-      "id": 12,
+      "id": "12",
       "name": "Bradley Ortiz",
       "content": "jkfnkfkf",
       "comments": 0,
@@ -206,7 +206,7 @@
       "profileUser": "src/images/profile-photo.svg"
     },
     {
-      "id": 13,
+      "id": "13",
       "name": "Bradley Ortiz",
       "content": "ffjkfk",
       "comments": 0,
@@ -217,7 +217,7 @@
       "profileUser": "src/images/profile-photo.svg"
     },
     {
-      "id": 14,
+      "id": "14",
       "name": "Bradley Ortiz",
       "content": "dfhjf",
       "comments": 0,
@@ -228,7 +228,7 @@
       "profileUser": "src/images/profile-photo.svg"
     },
     {
-      "id": 15,
+      "id": "15",
       "name": "Bradley Ortiz",
       "content": "sim",
       "comments": 0,
@@ -239,7 +239,7 @@
       "profileUser": "src/images/profile-photo.svg"
     },
     {
-      "id": 16,
+      "id": "16",
       "name": "Bradley Ortiz",
       "content": "yjhg",
       "comments": 0,
@@ -250,13 +250,264 @@
       "profileUser": "src/images/profile-photo.svg"
     },
     {
-      "id": 17,
+      "id": "17",
       "name": "Bradley Ortiz",
       "content": "g",
       "comments": 0,
       "retweets": 0,
       "likes": 0,
       "dateOrTime": "34m",
+      "author": "@bradleyOrtiz",
+      "profileUser": "src/images/profile-photo.svg"
+    },
+    {
+      "id": 18,
+      "name": "Bradley Ortiz",
+      "content": "",
+      "comments": 0,
+      "retweets": 0,
+      "likes": 0,
+      "dateOrTime": "18m",
+      "author": "@bradleyOrtiz",
+      "profileUser": "src/images/profile-photo.svg"
+    },
+    {
+      "id": 19,
+      "name": "Bradley Ortiz",
+      "content": "",
+      "comments": 0,
+      "retweets": 0,
+      "likes": 0,
+      "dateOrTime": "20m",
+      "author": "@bradleyOrtiz",
+      "profileUser": "src/images/profile-photo.svg"
+    },
+    {
+      "id": 20,
+      "name": "Bradley Ortiz",
+      "content": "",
+      "comments": 0,
+      "retweets": 0,
+      "likes": 0,
+      "dateOrTime": "21m",
+      "author": "@bradleyOrtiz",
+      "profileUser": "src/images/profile-photo.svg"
+    },
+    {
+      "id": 21,
+      "name": "Bradley Ortiz",
+      "content": "fjhfj",
+      "comments": 0,
+      "retweets": 0,
+      "likes": 0,
+      "dateOrTime": "29m",
+      "author": "@bradleyOrtiz",
+      "profileUser": "src/images/profile-photo.svg"
+    },
+    {
+      "id": 21,
+      "name": "Bradley Ortiz",
+      "content": "fjhfjfj",
+      "comments": 0,
+      "retweets": 0,
+      "likes": 0,
+      "dateOrTime": "37m",
+      "author": "@bradleyOrtiz",
+      "profileUser": "src/images/profile-photo.svg"
+    },
+    {
+      "id": 22,
+      "name": "Bradley Ortiz",
+      "content": "jrj",
+      "comments": 0,
+      "retweets": 0,
+      "likes": 0,
+      "dateOrTime": "37m",
+      "author": "@bradleyOrtiz",
+      "profileUser": "src/images/profile-photo.svg"
+    },
+    {
+      "id": 24,
+      "name": "Bradley Ortiz",
+      "comments": 0,
+      "retweets": 0,
+      "likes": 0,
+      "dateOrTime": "01m",
+      "author": "@bradleyOrtiz",
+      "profileUser": "src/images/profile-photo.svg"
+    },
+    {
+      "id": 25,
+      "name": "Bradley Ortiz",
+      "comments": 0,
+      "retweets": 0,
+      "likes": 0,
+      "dateOrTime": "02m",
+      "author": "@bradleyOrtiz",
+      "profileUser": "src/images/profile-photo.svg"
+    },
+    {
+      "id": 26,
+      "name": "Bradley Ortiz",
+      "content": "",
+      "comments": 0,
+      "retweets": 0,
+      "likes": 0,
+      "dateOrTime": "03m",
+      "author": "@bradleyOrtiz",
+      "profileUser": "src/images/profile-photo.svg"
+    },
+    {
+      "id": 27,
+      "name": "Bradley Ortiz",
+      "content": "",
+      "comments": 0,
+      "retweets": 0,
+      "likes": 0,
+      "dateOrTime": "04m",
+      "author": "@bradleyOrtiz",
+      "profileUser": "src/images/profile-photo.svg"
+    },
+    {
+      "id": 28,
+      "name": "Bradley Ortiz",
+      "content": "",
+      "comments": 0,
+      "retweets": 0,
+      "likes": 0,
+      "dateOrTime": "04m",
+      "author": "@bradleyOrtiz",
+      "profileUser": "src/images/profile-photo.svg"
+    },
+    {
+      "id": 29,
+      "name": "Bradley Ortiz",
+      "content": "",
+      "comments": 0,
+      "retweets": 0,
+      "likes": 0,
+      "dateOrTime": "04m",
+      "author": "@bradleyOrtiz",
+      "profileUser": "src/images/profile-photo.svg"
+    },
+    {
+      "id": 30,
+      "name": "Bradley Ortiz",
+      "content": "fffffffffff",
+      "comments": 0,
+      "retweets": 0,
+      "likes": 0,
+      "dateOrTime": "09m",
+      "author": "@bradleyOrtiz",
+      "profileUser": "src/images/profile-photo.svg"
+    },
+    {
+      "id": 31,
+      "name": "Bradley Ortiz",
+      "content": "ggggggggg",
+      "comments": 0,
+      "retweets": 0,
+      "likes": 0,
+      "dateOrTime": "10m",
+      "author": "@bradleyOrtiz",
+      "profileUser": "src/images/profile-photo.svg"
+    },
+    {
+      "id": 32,
+      "name": "Bradley Ortiz",
+      "content": "fggggggggg",
+      "comments": 0,
+      "retweets": 0,
+      "likes": 0,
+      "dateOrTime": "10m",
+      "author": "@bradleyOrtiz",
+      "profileUser": "src/images/profile-photo.svg"
+    },
+    {
+      "id": 33,
+      "name": "Bradley Ortiz",
+      "content": "hfffffffff",
+      "comments": 0,
+      "retweets": 0,
+      "likes": 0,
+      "dateOrTime": "10m",
+      "author": "@bradleyOrtiz",
+      "profileUser": "src/images/profile-photo.svg"
+    },
+    {
+      "id": 34,
+      "name": "Bradley Ortiz",
+      "content": "hffffffffff",
+      "comments": 0,
+      "retweets": 0,
+      "likes": 0,
+      "dateOrTime": "31m",
+      "author": "@bradleyOrtiz",
+      "profileUser": "src/images/profile-photo.svg"
+    },
+    {
+      "id": 35,
+      "name": "Bradley Ortiz",
+      "content": "jhfh",
+      "comments": 0,
+      "retweets": 0,
+      "likes": 0,
+      "dateOrTime": "31m",
+      "author": "@bradleyOrtiz",
+      "profileUser": "src/images/profile-photo.svg"
+    },
+    {
+      "id": 36,
+      "name": "Bradley Ortiz",
+      "content": "jjjjjjj",
+      "comments": 0,
+      "retweets": 0,
+      "likes": 0,
+      "dateOrTime": "32m",
+      "author": "@bradleyOrtiz",
+      "profileUser": "src/images/profile-photo.svg"
+    },
+    {
+      "id": 37,
+      "name": "Bradley Ortiz",
+      "content": "ffffffffff",
+      "comments": 0,
+      "retweets": 0,
+      "likes": 0,
+      "dateOrTime": "44m",
+      "author": "@bradleyOrtiz",
+      "profileUser": "src/images/profile-photo.svg"
+    },
+    {
+      "id": 38,
+      "name": "Bradley Ortiz",
+      "content": "hffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "comments": 0,
+      "retweets": 0,
+      "likes": 0,
+      "dateOrTime": "44m",
+      "author": "@bradleyOrtiz",
+      "profileUser": "src/images/profile-photo.svg"
+    },
+    {
+      "id": 39,
+      "name": "Bradley Ortiz",
+      "content": "fffffffffffffhhhhhhhhhhhh",
+      "comments": 0,
+      "retweets": 0,
+      "likes": 0,
+      "dateOrTime": "46m",
+      "author": "@bradleyOrtiz",
+      "profileUser": "src/images/profile-photo.svg"
+    },
+    {
+      "id": 40,
+      "name": "Bradley Ortiz",
+      "content": "ggggggggggggg",
+      "comments": 0,
+      "retweets": 0,
+      "likes": 0,
+      "dateOrTime": "47m",
       "author": "@bradleyOrtiz",
       "profileUser": "src/images/profile-photo.svg"
     }
