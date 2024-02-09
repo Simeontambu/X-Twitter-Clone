@@ -261,7 +261,7 @@
       "profileUser": "src/images/profile-photo.svg"
     },
     {
-      "id": 18,
+      "id": "18",
       "name": "Bradley Ortiz",
       "content": "",
       "comments": 0,
@@ -272,7 +272,7 @@
       "profileUser": "src/images/profile-photo.svg"
     },
     {
-      "id": 19,
+      "id": "19",
       "name": "Bradley Ortiz",
       "content": "",
       "comments": 0,
@@ -283,7 +283,7 @@
       "profileUser": "src/images/profile-photo.svg"
     },
     {
-      "id": 20,
+      "id": "20",
       "name": "Bradley Ortiz",
       "content": "",
       "comments": 0,
@@ -294,7 +294,7 @@
       "profileUser": "src/images/profile-photo.svg"
     },
     {
-      "id": 21,
+      "id": "21",
       "name": "Bradley Ortiz",
       "content": "fjhfj",
       "comments": 0,
@@ -305,7 +305,7 @@
       "profileUser": "src/images/profile-photo.svg"
     },
     {
-      "id": 21,
+      "id": "21",
       "name": "Bradley Ortiz",
       "content": "fjhfjfj",
       "comments": 0,
@@ -316,7 +316,7 @@
       "profileUser": "src/images/profile-photo.svg"
     },
     {
-      "id": 22,
+      "id": "22",
       "name": "Bradley Ortiz",
       "content": "jrj",
       "comments": 0,
@@ -327,7 +327,7 @@
       "profileUser": "src/images/profile-photo.svg"
     },
     {
-      "id": 24,
+      "id": "24",
       "name": "Bradley Ortiz",
       "comments": 0,
       "retweets": 0,
@@ -337,7 +337,7 @@
       "profileUser": "src/images/profile-photo.svg"
     },
     {
-      "id": 25,
+      "id": "25",
       "name": "Bradley Ortiz",
       "comments": 0,
       "retweets": 0,
@@ -347,7 +347,7 @@
       "profileUser": "src/images/profile-photo.svg"
     },
     {
-      "id": 26,
+      "id": "26",
       "name": "Bradley Ortiz",
       "content": "",
       "comments": 0,
@@ -358,7 +358,7 @@
       "profileUser": "src/images/profile-photo.svg"
     },
     {
-      "id": 27,
+      "id": "27",
       "name": "Bradley Ortiz",
       "content": "",
       "comments": 0,
@@ -369,7 +369,7 @@
       "profileUser": "src/images/profile-photo.svg"
     },
     {
-      "id": 28,
+      "id": "28",
       "name": "Bradley Ortiz",
       "content": "",
       "comments": 0,
@@ -380,7 +380,7 @@
       "profileUser": "src/images/profile-photo.svg"
     },
     {
-      "id": 29,
+      "id": "29",
       "name": "Bradley Ortiz",
       "content": "",
       "comments": 0,
@@ -391,7 +391,7 @@
       "profileUser": "src/images/profile-photo.svg"
     },
     {
-      "id": 30,
+      "id": "30",
       "name": "Bradley Ortiz",
       "content": "fffffffffff",
       "comments": 0,
@@ -402,7 +402,7 @@
       "profileUser": "src/images/profile-photo.svg"
     },
     {
-      "id": 31,
+      "id": "31",
       "name": "Bradley Ortiz",
       "content": "ggggggggg",
       "comments": 0,
@@ -413,7 +413,7 @@
       "profileUser": "src/images/profile-photo.svg"
     },
     {
-      "id": 32,
+      "id": "32",
       "name": "Bradley Ortiz",
       "content": "fggggggggg",
       "comments": 0,
@@ -424,7 +424,7 @@
       "profileUser": "src/images/profile-photo.svg"
     },
     {
-      "id": 33,
+      "id": "33",
       "name": "Bradley Ortiz",
       "content": "hfffffffff",
       "comments": 0,
@@ -435,7 +435,7 @@
       "profileUser": "src/images/profile-photo.svg"
     },
     {
-      "id": 34,
+      "id": "34",
       "name": "Bradley Ortiz",
       "content": "hffffffffff",
       "comments": 0,
@@ -446,7 +446,7 @@
       "profileUser": "src/images/profile-photo.svg"
     },
     {
-      "id": 35,
+      "id": "35",
       "name": "Bradley Ortiz",
       "content": "jhfh",
       "comments": 0,
@@ -457,7 +457,7 @@
       "profileUser": "src/images/profile-photo.svg"
     },
     {
-      "id": 36,
+      "id": "36",
       "name": "Bradley Ortiz",
       "content": "jjjjjjj",
       "comments": 0,
@@ -468,7 +468,7 @@
       "profileUser": "src/images/profile-photo.svg"
     },
     {
-      "id": 37,
+      "id": "37",
       "name": "Bradley Ortiz",
       "content": "ffffffffff",
       "comments": 0,
@@ -479,7 +479,7 @@
       "profileUser": "src/images/profile-photo.svg"
     },
     {
-      "id": 38,
+      "id": "38",
       "name": "Bradley Ortiz",
       "content": "hffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
       "comments": 0,
@@ -490,7 +490,7 @@
       "profileUser": "src/images/profile-photo.svg"
     },
     {
-      "id": 39,
+      "id": "39",
       "name": "Bradley Ortiz",
       "content": "fffffffffffffhhhhhhhhhhhh",
       "comments": 0,
@@ -501,13 +501,46 @@
       "profileUser": "src/images/profile-photo.svg"
     },
     {
-      "id": 40,
+      "id": "40",
       "name": "Bradley Ortiz",
       "content": "ggggggggggggg",
       "comments": 0,
       "retweets": 0,
       "likes": 0,
       "dateOrTime": "47m",
+      "author": "@bradleyOrtiz",
+      "profileUser": "src/images/profile-photo.svg"
+    },
+    {
+      "id": "41",
+      "name": "Bradley Ortiz",
+      "content": "fjhfujkf",
+      "comments": 0,
+      "retweets": 0,
+      "likes": 0,
+      "dateOrTime": "17m",
+      "author": "@bradleyOrtiz",
+      "profileUser": "src/images/profile-photo.svg"
+    },
+    {
+      "id": "42",
+      "name": "Bradley Ortiz",
+      "content": "djhjhfjhfj",
+      "comments": 0,
+      "retweets": 0,
+      "likes": 0,
+      "dateOrTime": "19m",
+      "author": "@bradleyOrtiz",
+      "profileUser": "src/images/profile-photo.svg"
+    },
+    {
+      "id": 43,
+      "name": "Bradley Ortiz",
+      "content": "GJFJHFJHFJHK",
+      "comments": 0,
+      "retweets": 0,
+      "likes": 0,
+      "dateOrTime": "18m",
       "author": "@bradleyOrtiz",
       "profileUser": "src/images/profile-photo.svg"
     }
