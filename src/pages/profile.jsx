@@ -11,7 +11,6 @@ export default function Profile() {
     <>
       {/* className="profile-name" */}
       <main className="timeline">
-        <ProfileName name={user} style={"profile-name"} />
         <About />
         <NavbarProfile />
         <UserTweets />

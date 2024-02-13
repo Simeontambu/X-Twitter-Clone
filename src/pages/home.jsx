@@ -11,7 +11,7 @@ function Home() {
       <main className="timeline">
         <Header />
         <Editor />
-        {isLoading && <Tweets /> }
+        <Tweets /> 
         
       </main>
     </>

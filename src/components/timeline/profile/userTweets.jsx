@@ -1,5 +1,4 @@
-import { useData } from "../../../hooks/useData"
-
+import { useData } from "../../../hooks/useData";
 
 import Image from "../home/image";
 import TweetActions from "../home/tweetActions";
@@ -8,21 +7,17 @@ import { Link, useParams } from "react-router-dom";
 
 import { tweetMap } from "../../../hooks/useMap";
 
-
 export default function UserTweets() {
-  
-  const {data} = useData()
- 
-  const tweets = data.tweets
+  const { data } = useData();
+
+  const tweets = data.tweets;
   const { user } = useParams();
 
   const filteredTweets = tweets.filter((tweet) => tweet.name === user);
 
-  
-
   return (
     <>
-     <div className="tweets">
+      <div className="tweets">
         {filteredTweets.map((tweet) => {
           return (
             <div className="tweet" key={tweet.id}>
@@ -69,5 +64,5 @@ export default function UserTweets() {
         })}
       </div>
     </>
-  )
+  );
 }

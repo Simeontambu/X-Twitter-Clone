@@ -513,19 +513,42 @@ nav ul li .active:hover {
 .city-joined,.subscrib{
     display: flex;
     align-items: center;
-    gap: .5rem;
+    gap: .9rem;
    
 }
 .profile-edit-button{
-  /* display: flex; */
-  justify-content: space-between;
+ 
+ display: flex;
   text-transform: capitalize;
   padding: 0.3rem 1.5rem;
   border-radius: 50px;
+  border: solid #2f3336;
   color: white;
   font-size: 1rem;
-  margin-left: 450px;
+  margin-left: 490px;
   margin-top: 8px;
   background-color: black;
   color: white;
+}
+
+.profile-header{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 1.5rem 1rem;
+  border-bottom: 1px solid #2f3336;
+}
+.setting-icone{
+display: flex;
+ gap: 0.375em;
+}
+.about-profile-icone{
+  display:flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.subscriptions{
+  display: flex;
+  flex-direction: row;
+  gap: 0.2em;
 }

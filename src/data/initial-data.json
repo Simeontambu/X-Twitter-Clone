@@ -534,13 +534,46 @@
       "profileUser": "src/images/profile-photo.svg"
     },
     {
-      "id": 43,
+      "id": "43",
       "name": "Bradley Ortiz",
       "content": "GJFJHFJHFJHK",
       "comments": 0,
       "retweets": 0,
       "likes": 0,
       "dateOrTime": "18m",
+      "author": "@bradleyOrtiz",
+      "profileUser": "src/images/profile-photo.svg"
+    },
+    {
+      "id": 6,
+      "name": "Bradley Ortiz",
+      "content": "Rdc mon pays",
+      "comments": 0,
+      "retweets": 0,
+      "likes": 0,
+      "dateOrTime": "10m",
+      "author": "@bradleyOrtiz",
+      "profileUser": "src/images/profile-photo.svg"
+    },
+    {
+      "id": 45,
+      "name": "Bradley Ortiz",
+      "content": "Siméon",
+      "comments": 0,
+      "retweets": 0,
+      "likes": 0,
+      "dateOrTime": "07m",
+      "author": "@bradleyOrtiz",
+      "profileUser": "src/images/profile-photo.svg"
+    },
+    {
+      "id": 46,
+      "name": "Bradley Ortiz",
+      "content": "Tambu",
+      "comments": 0,
+      "retweets": 0,
+      "likes": 0,
+      "dateOrTime": "12m",
       "author": "@bradleyOrtiz",
       "profileUser": "src/images/profile-photo.svg"
     }
