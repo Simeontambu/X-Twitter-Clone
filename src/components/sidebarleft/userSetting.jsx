@@ -1,10 +1,10 @@
-import { NavLink,useParams } from "react-router-dom";
-import Img from "./../../images/Profile-Photo-setting.svg";
-import Private from "./../../images/Private.svg";
-import Image from "../timeline/home/image";
+import { NavLink, useParams } from "react-router-dom"
+import Img from "./../../images/Profile-Photo-setting.svg"
+import Private from "./../../images/Private.svg"
+import Image from "../timeline/home/image"
 export default function UserSetting() {
-  const { user } = useParams();
-  const username = user || "Bradley Ortiz";
+  const { user } = useParams()
+  const username = user || "Bradley Ortiz"
   return (
     <>
       <NavLink to={`/${username}`} className="active">
@@ -24,5 +24,5 @@ export default function UserSetting() {
         </div>
       </NavLink>
     </>
-  );
+  )
 }

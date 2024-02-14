@@ -1,18 +1,18 @@
-import { NavLink, useParams } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom"
 
-import Image from "../timeline/home/image";
-import logoHome from "./../../images/Home-Fill.svg";
-import logoX from "./../../images/Twitter.svg";
-import logoExplore from "./../../images/Explore.svg";
-import logoNotifications from "./../../images/Notifications.svg";
-import logoMore from "./../../images/More.svg";
-import logoImage from "./../../images/Profile.svg";
-import logoLists from "./../../images/Lists.svg";
-import logoBookmarks from "./../../images/Bookmarks.svg";
-import logoMessages from "./../../images/Messages.svg";
+import Image from "../timeline/home/image"
+import logoHome from "./../../images/Home-Fill.svg"
+import logoX from "./../../images/Twitter.svg"
+import logoExplore from "./../../images/Explore.svg"
+import logoNotifications from "./../../images/Notifications.svg"
+import logoMore from "./../../images/More.svg"
+import logoImage from "./../../images/Profile.svg"
+import logoLists from "./../../images/Lists.svg"
+import logoBookmarks from "./../../images/Bookmarks.svg"
+import logoMessages from "./../../images/Messages.svg"
 export default function Navbar() {
-  const { user } = useParams();
-  const username = user || "Bradley Ortiz";
+  const { user } = useParams()
+  const username = user || "Bradley Ortiz"
   console.log(username)
   return (
     <>
@@ -70,5 +70,5 @@ export default function Navbar() {
         </ul>
       </nav>
     </>
-  );
+  )
 }

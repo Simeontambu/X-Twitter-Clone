@@ -1,6 +1,6 @@
-import Navbar from "./navbar";
-import UserSetting from "./userSetting";
-import Button from "../timeline/home/button";
+import Navbar from "./navbar"
+import UserSetting from "./userSetting"
+import Button from "../timeline/home/button"
 
 export default function Sidebar() {
   return (
@@ -8,8 +8,8 @@ export default function Sidebar() {
       <div className="sidebar">
         <Navbar />
         <Button name="Tweet" className="button-sidebar" />
-        <UserSetting/>
+        <UserSetting />
       </div>
     </>
-  );
+  )
 }

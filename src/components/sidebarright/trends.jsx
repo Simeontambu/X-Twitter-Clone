@@ -1,8 +1,8 @@
-import Image from "../timeline/home/image";
-import logoSetting from "./../../images/Options.svg";
+import Image from "../timeline/home/image"
+import logoSetting from "./../../images/Options.svg"
 
 export default function Trends() {
-  const trends = ["#SQUID", "#SQUID", "#SQUID", "#SQUID"];
+  const trends = ["#SQUID", "#SQUID", "#SQUID", "#SQUID"]
   return (
     <div className="trends">
       <div className="Trends-for-you">
@@ -26,5 +26,5 @@ export default function Trends() {
         Show more
       </a>
     </div>
-  );
+  )
 }

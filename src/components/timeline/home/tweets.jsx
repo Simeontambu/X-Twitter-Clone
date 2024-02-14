@@ -13,7 +13,7 @@ export default function Tweets() {
         {tweetsData.map((tweet) => {
           return (
             <tweetMap.Provider value={tweet}>
-            <Tweet/>
+              <Tweet />
             </tweetMap.Provider>
           )
         })}
@@ -21,4 +21,3 @@ export default function Tweets() {
     </>
   )
 }
-
