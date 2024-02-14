@@ -26,7 +26,7 @@ export function DataContextProvider({ children }) {
           "http://localhost:8000/currentUser"
         )
         const combinedData = {
-          tweets: tweetsResponse.data,
+          tweets: tweetsResponse.data.reverse(),
           currentUser: currentUserResponse.data,
         }
         setData(combinedData)
