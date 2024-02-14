@@ -6,8 +6,10 @@ export default function Sidebar() {
   return (
     <>
       <div className="sidebar">
-        <Navbar />
-        <Button name="Tweet" className="button-sidebar" />
+        <div>
+          <Navbar />
+          <Button name="Tweet" className="button-sidebar" />
+        </div>
         <UserSetting />
       </div>
     </>

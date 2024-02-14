@@ -21,7 +21,7 @@ export function DataContextProvider({ children }) {
     const fetchData = async () => {
       
       try {
-        const tweetsResponse = await axios.get("http://localhost:8000/tweetss")
+        const tweetsResponse = await axios.get("http://localhost:8000/tweets")
         
         const currentUserResponse = await axios.get(
           "http://localhost:8000/currentUser"

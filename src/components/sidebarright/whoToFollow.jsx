@@ -9,7 +9,7 @@ export default function WhoToFollow() {
   return (
     <div className="who-to-follow">
       <h3>Who to follow</h3>
-      {LoaderWhoToFollow ? (
+      {loading ? (
         <LoaderWhoToFollow />
       ) : (
         <ul>

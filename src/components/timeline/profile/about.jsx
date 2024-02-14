@@ -1,27 +1,29 @@
 import Image from "../home/image"
 import { useData } from "../../../hooks/useData"
-import { Link, useParams } from "react-router-dom"
+import { useParams } from "react-router-dom"
 import Button from "../home/button"
 import ProfileName from "./profileName"
 import { FaRegCalendarAlt } from "react-icons/fa"
 import { IoLocationOutline } from "react-icons/io5"
 import { WiDirectionLeft } from "react-icons/wi"
+import { LoaderWhoToFollow } from "../../loader"
 import Private from "./../../../images/Private.svg"
 
 export default function About() {
-  const { data } = useData()
+  const { data,loading } = useData()
   const currentUser = data.currentUser
 
   const tweets = data.tweets
   const { user } = useParams()
-  const filteredTweets = tweets.filter(
+ 
+  const filteredTweets = !loading && tweets.filter(
     (tweet) => tweet.name === user && tweet.name != currentUser.pseudo
   )
-  const numberOfPosts = filteredTweets.length
+  const numberOfPosts = !loading && filteredTweets.length
 
   return (
     <>
-      {currentUser.pseudo === user && (
+      {loading? "":currentUser.pseudo === user && (
         <div>
           <div className="profile-header">
             <WiDirectionLeft size="24" />
@@ -85,7 +87,7 @@ export default function About() {
           </div>
         </div>
       )}
-      <div>
+      {loading? "":<div>
         {filteredTweets.slice(0, 1).map((tweet) => {
           return (
             <>
@@ -152,7 +154,7 @@ export default function About() {
             </>
           )
         })}
-      </div>
+      </div>}
     </>
   )
 }
