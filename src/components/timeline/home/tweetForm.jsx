@@ -16,7 +16,6 @@ export default function TweetForm({ ...props }) {
     handleSubmit,
     reset,
   } = useForm()
-  console.log(useForm())
   const onSubmit = (data) => {
     const newTweet = {
       id: tweets.length + 1,

@@ -15,13 +15,14 @@ export function useData() {
 
 export function DataContextProvider({ children }) {
   const [isLiked, setIsLiked] = useState(false)
-  const [data, setData] = useState(fileJson)
-
-
+  const [data, setData] = useState({})
+  const [loading, setLoading] = useState(true)
   useEffect(() => {
     const fetchData = async () => {
+      
       try {
-        const tweetsResponse = await axios.get("http://localhost:8000/tweets")
+        const tweetsResponse = await axios.get("http://localhost:8000/tweetss")
+        
         const currentUserResponse = await axios.get(
           "http://localhost:8000/currentUser"
         )
@@ -29,7 +30,9 @@ export function DataContextProvider({ children }) {
           tweets: tweetsResponse.data.reverse(),
           currentUser: currentUserResponse.data,
         }
+      
         setData(combinedData)
+        setLoading(false);
       } catch (error) {
         console.error("Error fetching data:", error)
       } 
@@ -37,6 +40,7 @@ export function DataContextProvider({ children }) {
 
     fetchData()
   }, [])
+
 
   // Function to add tweet to tweet list
   const addTweet = (newTweet) => {
@@ -64,6 +68,7 @@ export function DataContextProvider({ children }) {
     isLiked,
 
     setIsLiked,
+    loading
   }
 
   return <DataContext.Provider value={value}>{children}</DataContext.Provider>
