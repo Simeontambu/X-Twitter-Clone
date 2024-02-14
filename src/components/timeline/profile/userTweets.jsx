@@ -1,9 +1,5 @@
 import { useData } from "../../../hooks/useData"
-
-import Image from "../home/image"
-import TweetActions from "../home/tweetActions"
-import Verified from "./../../../images/Verified.svg"
-import { Link, useParams } from "react-router-dom"
+import { useParams } from "react-router-dom"
 
 import { tweetMap } from "../../../hooks/useMap"
 import Tweet from "../home/tweet"
