@@ -75,10 +75,11 @@ body {
   padding: 10px 0 0 0;
   margin: 13px 0;
   overflow: hidden;
- 
- 
+
+
 }
-.tweet-editor-input::placeholder{
+
+.tweet-editor-input::placeholder {
   font-family: "SF Pro Text";
   font-weight: 400;
   line-height: normal;
@@ -241,6 +242,7 @@ body {
   margin-bottom: 20px;
   padding-top: 1.5em;
 }
+
 .active {
   text-decoration: none;
   color: white;
@@ -261,9 +263,11 @@ nav ul li .active {
 nav ul li .active:hover {
   background-color: #1a1a1a;
 }
+
 .link {
   text-decoration: none;
 }
+
 .button-sidebar {
   text-transform: capitalize;
   padding: 0.9rem 6rem;
@@ -275,6 +279,7 @@ nav ul li .active:hover {
   color: white;
   font-size: 1rem;
 }
+
 .user-setting {
   margin: 0 0 0.3125em 0;
   display: flex;
@@ -282,17 +287,21 @@ nav ul li .active:hover {
   font-size: 1rem;
   border-radius: 4rem;
   padding: 0.7em;
- 
+
 }
+
 .user-setting:hover {
   background-color: #1a1a1a;
 }
+
 .user-setting-three-dot {
   margin-left: 3.5em;
 }
+
 .user-setting-name {
   display: flex;
 }
+
 .user-setting-icone {
   display: flex;
 }
@@ -410,7 +419,7 @@ nav ul li .active:hover {
   margin-bottom: 0px;
 }
 
-.trends ul .Trending > p {
+.trends ul .Trending>p {
   margin-top: 15px;
 }
 
@@ -432,6 +441,7 @@ nav ul li .active:hover {
   display: flex;
   margin-left: 10px;
 }
+
 .who-to-follow-icone {
   display: flex;
   align-items: center;
@@ -453,98 +463,156 @@ nav ul li .active:hover {
 /* Profile page */
 
 
-.navbar-profile{
+.navbar-profile {
   border-bottom: 1px solid #2f3336;
 }
-.navbar-profile ul{
+
+.navbar-profile ul {
   display: flex;
   list-style: none;
- 
+
   justify-content: space-around;
-  
+
 }
-.navbar-profile ul li{
-  
+
+.navbar-profile ul li {
+
   padding: 0.5rem 1rem;
-  
+
 }
-.navbar-profile-color{
-  
+
+.navbar-profile ul li:hover {
+
+  background-color: #1a1a1a;
+}
+
+.navbar-profile-color {
+
   color: white;
   border-bottom: 4px solid #1d9bf0;
   border-radius: 1px;
-  
+
 }
 
-.profile-cover{
+.profile-cover {
   width: 100%;
-    height: 200px;
+  height: 200px;
+
 }
+
 .profile-cover img {
   width: 100%;
   height: 100%;
 }
+
+.profile-cover-bg {
+  background-color: #6e767d;
+}
+
 .profile-photo {
-  height: 133.6px;
-  width: 133.6px;
-  flex: 133.6px;
-  position: absolute;
+  height: 8.35em;
+  width: 8.35em;
   margin: -70px 0 0 1rem;
-}
-.profile-photo img {
-  width: 100%;
-  height: 100%;
   border-radius: 100%;
-  border: #f5f5f5 3px solid;
- 
+  border: black 3px solid;
 }
+
+.profile-photo-profile-edit-button {
+  display: flex;
+  justify-content: space-between;
+}
+
 .about-profile {
   display: flex;
   flex-direction: column;
   gap: .6rem;
   padding: 1rem;
-  margin: 30px 0 0 0;
+  font-family: Helvetica Neue;
+}
+
+.follow-more {
+  display: flex;
+  gap: 0.4em;
+  height: 100%;
+
+}
+
+.more-button {
+  border-radius: 20px;
+  border: 1px solid #2f3336;
+  margin-top: 8px;
+  padding: 0 0.3em;
+}
+
+.more-button:hover {
+  background-color: #1a1a1a;
+}
+
+.biography {
+  font-size: 1.10em;
+}
+
+.pseudo-username {
+  font-size: 1.25em;
 }
 
 
-.city-joined,.subscrib{
-    display: flex;
-    align-items: center;
-    gap: .9rem;
-   
+.city-joined,
+.subscrib {
+  display: flex;
+  align-items: center;
+  gap: .9rem;
+
 }
-.profile-edit-button{
- 
- display: flex;
+
+.profile-edit-button {
   text-transform: capitalize;
-  padding: 0.3rem 1.5rem;
+  padding: 0.3em 1.5rem;
   border-radius: 50px;
-  border: solid #2f3336;
+  border: 1px solid #2f3336;
   color: white;
   font-size: 1rem;
-  margin-left: 490px;
   margin-top: 8px;
   background-color: black;
-  color: white;
+  height: 100%;
+  margin-right: 15px;
 }
 
-.profile-header{
+.profile-edit-button:hover {
+  background-color: #1a1a1a;
+}
+
+.profile-edit-button-color {
+  border: solid;
+  color: black;
+  background-color: rgb(235, 229, 229);
+}
+
+.profile-edit-button-color:hover {
+
+  background-color: rgb(211, 208, 208);
+}
+
+.profile-header {
   display: flex;
   align-items: center;
   gap: 15px;
   padding: 1.5rem 1rem;
   border-bottom: 1px solid #2f3336;
 }
-.setting-icone{
-display: flex;
- gap: 0.375em;
+
+.setting-icone {
+  display: flex;
+  gap: 0.375em;
 }
-.about-profile-icone{
-  display:flex;
+
+.about-profile-icone {
+  display: flex;
   flex-direction: column;
   gap: 1em;
 }
-.subscriptions{
+
+.subscriptions {
   display: flex;
   flex-direction: row;
   gap: 0.2em;

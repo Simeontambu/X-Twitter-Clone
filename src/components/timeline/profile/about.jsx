@@ -8,14 +8,15 @@ import { IoLocationOutline } from "react-icons/io5"
 import { WiDirectionLeft } from "react-icons/wi"
 import { LoaderWhoToFollow } from "../../loader"
 import Private from "./../../../images/Private.svg"
+import more from "./../../../images/More-2.svg"
 
 export default function About() {
-  const { data,loading } = useData()
+  const { data, loading } = useData()
   const currentUser = data.currentUser
 
   const tweets = data.tweets
   const { user } = useParams()
- 
+
   const filteredTweets = !loading && tweets.filter(
     (tweet) => tweet.name === user && tweet.name != currentUser.pseudo
   )
@@ -23,7 +24,7 @@ export default function About() {
 
   return (
     <>
-      {loading? "":currentUser.pseudo === user && (
+      {loading ? "" : currentUser.pseudo === user && (
         <div>
           <div className="profile-header">
             <WiDirectionLeft size="24" />
@@ -40,16 +41,17 @@ export default function About() {
           </div>
 
           <div className="profile-cover">
-            <Image />
+            <Image className="profile-cover-bg" />
           </div>
-          <div>
+          <div className="profile-photo-profile-edit-button ">
             <Image src={currentUser.profilePicture} className="profile-photo" />
             <Button name="Edit profile" className="profile-edit-button" />
           </div>
 
+
           <div className="about-profile">
             <div className="about-profile-icone">
-              <div>
+              <div className="pseudo-username">
                 <div className="setting-icone">
                   <span>{currentUser.pseudo}</span>
 
@@ -60,9 +62,9 @@ export default function About() {
                 </span>
               </div>
 
-              <span>{currentUser.biography}</span>
+              <span className="biography">{currentUser.biography}</span>
             </div>
-            <div className="city-joined tweet-title-details">
+            <div className="city-joined biography tweet-title-details">
               <span className="location setting-icone">
                 <IoLocationOutline />
                 <span>{currentUser.city}</span>
@@ -73,7 +75,7 @@ export default function About() {
                 <FaRegCalendarAlt /> <span>{currentUser.yearJoined}</span>
               </span>
             </div>
-            <div className="subscrib">
+            <div className="subscrib biography">
               <span className="subscriptions">
                 <span>{currentUser.numberSubscriptions}</span>
 
@@ -87,7 +89,7 @@ export default function About() {
           </div>
         </div>
       )}
-      {loading? "":<div>
+      {loading ? "" : <div>
         {filteredTweets.slice(0, 1).map((tweet) => {
           return (
             <>
@@ -106,28 +108,31 @@ export default function About() {
                 </div>
 
                 <div className="profile-cover">
-                  <Image />
+                  <Image className="profile-cover-bg"/>
                 </div>
-                <div>
+                <div className="profile-photo-profile-edit-button">
                   <Image src={tweet.profileUser} className="profile-photo" />
+                  <div className="follow-more">
+                  <Image src={more} className="more-button"/>
+                  <Button name="Follow" className="profile-edit-button profile-edit-button-color" />
+                  </div>
                 </div>
-                <Button name="Follow" className="profile-edit-button" />
                 <div className="about-profile">
                   <div className="about-profile-icone">
-                    <div>
+                    <div className="pseudo-username">
                       <div className="setting-icone">
                         <span>{tweet.name}</span>
                         <Image src={Private} />
                       </div>
-                      <span className="tweet-title-details">
+                      <span className=" tweet-title-details">
                         {tweet.author}
                       </span>
                     </div>
 
-                    <span>{tweet.biography}</span>
+                    <span className="biography">{tweet.biography}</span>
                   </div>
 
-                  <div className="city-joined tweet-title-details">
+                  <div className=" biography city-joined tweet-title-details">
                     <span className="location setting-icone">
                       <IoLocationOutline />
                       <span>{tweet.city}</span>
@@ -137,7 +142,7 @@ export default function About() {
                       <span>{tweet.yearJoined}</span>
                     </span>
                   </div>
-                  <div className="subscrib">
+                  <div className="subscrib biography">
                     <span className="subscriptions">
                       <span>{tweet.numberSubscriptions}</span>
 
