@@ -1,4 +1,4 @@
-```markdown
+
 # Clone Twitter avec React + Vite
 
 ## Description du projet
