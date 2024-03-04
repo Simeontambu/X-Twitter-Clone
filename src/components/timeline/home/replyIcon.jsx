@@ -22,11 +22,23 @@ export default function ReplyIcon() {
   };
 
   const iconStyle = {
+    padding: "10px",
+    background: isClicked ? "transparent" : isHovered ? "#0a171f" : "",
+    borderRadius: "50%",
+};
+
+//   const iconStyle = {
+//     padding: "10px",
+//     background: isClicked ? "" : isHovered ? "bg-[#0a171f]" : "",
+//     borderRadius: "rounded-full",
+// };
+
+
+/* const iconStyle = {
     borderRadius: "50%",
     padding: "10px",
     background: isClicked ? "" : isHovered ? "#0a171f" : " ",
-  };
-
+  }; */
   const clickStyle = {
     color: isClicked ? "#6E767D" : isHovered ? "#1d9bf0" : " ",
     padding: "10px",
@@ -42,7 +54,10 @@ export default function ReplyIcon() {
     >
       <span className="tweet-action-button-over">
         <span className="tweet-action-button-over-2" style={iconStyle}>
+          <span className={`bg-red-700 `}>
+
           <svg
+         
             width="20"
             height="20"
             viewBox="0 0 20 20"
@@ -55,6 +70,7 @@ export default function ReplyIcon() {
               }`}
             />
           </svg>
+          </span>
         </span>
       </span>
       <span className="details-count-icon-coment" style={clickStyle}>
