@@ -2,8 +2,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Home from "./pages/home.jsx"
 import Layout from "./components/layout"
 import Profile from "./pages/profile"
-// import "./styles.css"
 import "./style/reset.css"
+import "./styles.css"
 import "./style/App.css"
 
 export default function App() {

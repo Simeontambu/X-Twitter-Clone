@@ -8,7 +8,7 @@ export default function Tweetactions() {
 
   return (
     <>
-      <div className="tweet-actions">
+      <div className="flex justify-center items-center gap-[4.5rem] text-gray-400">
         <ReplyIcon />
         <RetweetIcon />
         <ReactIcone />
