@@ -211,6 +211,7 @@ body {
 
 /* side bar left */
 .sidebar {
+ 
   flex: 0 0 275px;
   font-family: "Inter", sans-serif;
   display: flex;
@@ -301,7 +302,7 @@ nav ul li .active:hover {
 
 .sidebar-right {
   padding-top: 1.5em;
-
+  flex: 0 0 360px;
   position: sticky;
   height: 100%;
   top: -300px;

@@ -91,7 +91,6 @@
       "numberSubscribers": "9",
       "coverPhoto": "src/images/tweet-image.png"
     },
-    
     {
       "id": 6,
       "name": "CNN",
@@ -163,6 +162,17 @@
       "retweets": 0,
       "likes": 0,
       "dateOrTime": "45m",
+      "author": "@bradleyOrtiz",
+      "profileUser": "src/images/profile-photo.svg"
+    },
+    {
+      "id": 11,
+      "name": "Bradley Ortiz",
+      "content": "Il est presque terminé !",
+      "comments": 0,
+      "retweets": 0,
+      "likes": 0,
+      "dateOrTime": "53m",
       "author": "@bradleyOrtiz",
       "profileUser": "src/images/profile-photo.svg"
     }
