@@ -1,13 +1,12 @@
 import React from "react"
-import { useState } from "react"
 import { useForm } from "react-hook-form"
 import Button from "./button"
 import TweetEdiorActions from "./tweetEditorActions"
 import { useData } from "../../../hooks/useData"
+import moment from "moment"
 
 export default function TweetForm({ ...props }) {
-  const { addTweet, data } = useData()
-  const currentUser = data.currentUser
+  const { addTweet, data, isLogin,addTweets } = useData()
   const tweets = data.tweets
 
   const {
@@ -16,19 +15,35 @@ export default function TweetForm({ ...props }) {
     handleSubmit,
     reset,
   } = useForm()
-  const onSubmit = (data) => {
-    const newTweet = {
-      id: tweets.length + 1,
-      name: currentUser.pseudo,
-      content: data.tweet,
-      comments: 0,
-      retweets: 0,
-      likes: 0,
-      dateOrTime: `${new Date().getMinutes().toString().padStart(2, "0")}m`,
-      author: currentUser.userName,
-      profileUser: currentUser.profilePicture,
-    }
 
+  const onSubmit = (data) => {
+    const date = new Date().toLocaleDateString("fr-FR", {
+      day: "numeric",
+      month: "long",
+    })
+      const newTweet = {
+        id: tweets.length + 1,
+        author: isLogin.id,
+        text: data.tweet,
+        repliesCount: 0,
+        retweetCount: 0,
+        createdAt: date,
+        media: [],   
+    }
+    const newTweetTwo = {
+      id: tweets.length + 1,
+      author: isLogin.id,
+      text: data.tweet,
+      repliesCount: 0,
+      retweetCount: 0,
+      formattedDate: date,
+      media: false, 
+      likes:0,
+      authorName:isLogin.name , 
+      profilePicture:isLogin.profilePicture,
+      authorUsername:isLogin.handle,
+  }
+  addTweets(newTweetTwo)
     addTweet(newTweet)
     reset()
   }

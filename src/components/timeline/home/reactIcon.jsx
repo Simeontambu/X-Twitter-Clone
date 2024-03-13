@@ -33,10 +33,10 @@ export default function ReactIcone() {
   }
 
   const iconStyle = {
-    borderRadius: "50%",
+    // borderRadius: "50%",
     padding: "10px",
-   
-    background: isHovered ? "#200914" : " ",
+
+    // background: isHovered ? "#200914" : " ",
   }
 
   const clickStyle = {

@@ -1,6 +1,6 @@
 import Trends from "./trends"
 import WhoToFollow from "./whoToFollow"
-import TweetEditorInput from './../timeline/home/tweetEditorInput'
+import TweetEditorInput from "./../timeline/home/tweetEditorInput"
 
 export default function SidebarRight() {
   return (
@@ -9,7 +9,7 @@ export default function SidebarRight() {
         <TweetEditorInput
           type="text"
           placeholder="Search Twitter"
-          className="search-twitter search-icon"
+          className="search-twitter search-icon outline-none border-none rounded-[20px]"
         />
       </div>
       <Trends />

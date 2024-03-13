@@ -6,15 +6,14 @@ import Tweet from "../home/tweet"
 
 export default function UserTweets() {
   const { data, loading } = useData()
-
-  const tweets = data.tweets
   const { user } = useParams()
-
-  const filteredTweets =!loading && tweets.filter((tweet) => tweet.name === user)
+  const tweetsData = data.tweets
+  const filteredTweets =  tweetsData.filter(
+    (tweet) => tweet.authorName === user  )  
 
   return (
     <>
-      {loading? <LoaderTweet/>:<div className="tweets">
+      {loading? <LoaderTweet/>:(<div className="tweets">
         {filteredTweets.map((tweet) => {
           return (
             <tweetMap.Provider value={tweet}>
@@ -22,7 +21,7 @@ export default function UserTweets() {
             </tweetMap.Provider>
           )
         })}
-      </div>}
+      </div>)}
     </>
   )
 }

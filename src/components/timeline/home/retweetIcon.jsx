@@ -22,9 +22,9 @@ export default function RetweetIcon() {
   }
 
   const iconStyle = {
-    borderRadius: "50%",
+    // borderRadius: "50%",
     padding: "10px",
-    background: isClicked ? "" : isHovered ? "#071a14" : " ",
+    // background: isClicked ? "" : isHovered ? "#071a14" : " ",
   }
 
   const clickStyle = {
@@ -57,7 +57,7 @@ export default function RetweetIcon() {
         </span>
       </span>
       <span className="tweet-title-details details-count" style={clickStyle}>
-        {tweets.retweets}
+        {tweets.retweetCount}
       </span>
     </div>
   )

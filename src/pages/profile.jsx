@@ -4,8 +4,9 @@ import UserTweets from "../components/timeline/profile/userTweets"
 import NavbarProfile from "../components/timeline/profile/navbarProfile"
 import About from "../components/timeline/profile/about"
 
+
 export default function Profile() {
-  const { user } = useParams()
+
 
   return (
     <>
