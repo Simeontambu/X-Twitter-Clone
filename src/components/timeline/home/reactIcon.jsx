@@ -18,9 +18,9 @@ export default function ReactIcone() {
     tweets.isLiked = !tweets.isLiked
 
     if (tweets.isLiked) {
-      tweets.likes++
+      tweets.favoriteCount++
     } else {
-      tweets.likes--
+      tweets.favoriteCount--
     }
   }
 
@@ -70,7 +70,7 @@ export default function ReactIcone() {
         </span>
       </span>
       <span className="" style={clickStyle}>
-        {tweets.likes}
+        {tweets.favoriteCount}
       </span>
     </div>
   )

@@ -8,20 +8,22 @@ export default function UserTweets() {
   const { data, loading } = useData()
   const { user } = useParams()
   const tweetsData = data.tweets
-  const filteredTweets =  tweetsData.filter(
-    (tweet) => tweet.authorName === user  )  
-
+  const filteredTweets = tweetsData.filter((tweet) => tweet.authorName === user)
   return (
     <>
-      {loading? <LoaderTweet/>:(<div className="tweets">
-        {filteredTweets.map((tweet) => {
-          return (
-            <tweetMap.Provider value={tweet}>
-              <Tweet />
-            </tweetMap.Provider>
-          )
-        })}
-      </div>)}
+      {loading ? (
+        <LoaderTweet />
+      ) : (
+        <div className="tweets">
+          {filteredTweets.map((tweet) => {
+            return (
+              <tweetMap.Provider value={tweet}>
+                <Tweet />
+              </tweetMap.Provider>
+            )
+          })}
+        </div>
+      )}
     </>
   )
 }

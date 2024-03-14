@@ -18,9 +18,9 @@ export default function ShareIcon() {
   }
 
   const iconStyle = {
-    borderRadius: "50%",
+    // borderRadius: "50%",
     padding: "10px",
-    background: isClicked ? "" : isHovered ? "#0a171f" : " ",
+    // background: isClicked ? "" : isHovered ? "#0a171f" : " ",
   }
 
   const clickStyle = {

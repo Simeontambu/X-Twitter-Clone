@@ -28,6 +28,7 @@ export default function TweetForm({ ...props }) {
         repliesCount: 0,
         retweetCount: 0,
         createdAt: date,
+        favoriteCount:0,
         media: [],   
     }
     const newTweetTwo = {
@@ -38,7 +39,7 @@ export default function TweetForm({ ...props }) {
       retweetCount: 0,
       formattedDate: date,
       media: false, 
-      likes:0,
+      favoriteCount:0,
       authorName:isLogin.name , 
       profilePicture:isLogin.profilePicture,
       authorUsername:isLogin.handle,

@@ -21,7 +21,8 @@ export function DataContextProvider({ children }) {
   const [loading, setLoading] = useState(true)
   const [isLogin, setIslogin] = useState({})
   const [login, setIlogin] = useState(false)
-
+  const [filter, setFilter] = useState("Posts")
+  const [tweetMedia, setTweetMedia] = useState({})
 
   useEffect(() => {
     const fetchData = async () => {
@@ -49,6 +50,7 @@ export function DataContextProvider({ children }) {
         try {
           let currentUserResponse
           let currentUserTweetResponse
+          let userTweetMediaResponse
           if (user) {
             currentUserResponse = await axios.get(
               `https://twitter-clone-api-c1-simeontambu-2.onrender.com/${user}`
@@ -56,9 +58,13 @@ export function DataContextProvider({ children }) {
             currentUserTweetResponse = await axios.get(
               `https://twitter-clone-api-c1-simeontambu-2.onrender.com/${user}/tweets`
             )
+            userTweetMediaResponse = await axios.get(
+              `https://twitter-clone-api-c1-simeontambu-2.onrender.com/${user}/media`
+            )
           }
           setUserByUsername(currentUserResponse.data)
           setUserTweetByUsername(currentUserTweetResponse.data)
+          setTweetMedia(userTweetMediaResponse.data)
           setLoading(false)
         } catch (error) {
           console.error("Error fetching data:", error)
@@ -79,11 +85,10 @@ export function DataContextProvider({ children }) {
               `https://twitter-clone-api-c1-simeontambu-2.onrender.com/${username}`
             )
           }
-          console.log(userResponse.data)
           setIslogin(userResponse.data)
           setLoading(false)
         } catch (error) {
-          console.error("Error fetching data:", error)
+          // console.error("Error fetching data:", error)
         }
       }
 
@@ -91,26 +96,24 @@ export function DataContextProvider({ children }) {
     }, [username])
   }
 
-  // Function to add tweet to tweet list
+  // Function to add tweet to api
   const addTweet = async (newTweet) => {
     await axios
       .post(
         "https://twitter-clone-api-c1-simeontambu-2.onrender.com/tweets",
         newTweet
       )
-      .then((response) => {
-       
-      })
+      .then((response) => {})
       .catch((error) => {
         console.error("Error posting tweet:", error)
       })
   }
-  const addTweets =  (newTweet) => {
-        setData((prevData) => {
-          const updatedTweets = [newTweet, ...data.tweets]
-          return { ...prevData, tweets: updatedTweets }
-        })
-
+  // Function to add tweet to tweet list
+  const addTweets = (newTweet) => {
+    setData((prevData) => {
+      const updatedTweets = [newTweet, ...data.tweets]
+      return { ...prevData, tweets: updatedTweets }
+    })
   }
 
   const value = {
@@ -131,7 +134,10 @@ export function DataContextProvider({ children }) {
     login,
     setIlogin,
     setLoading,
-    addTweets
+    addTweets,
+    filter,
+    setFilter,
+    tweetMedia,
   }
 
   return <DataContext.Provider value={value}>{children}</DataContext.Provider>

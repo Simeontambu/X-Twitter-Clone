@@ -14,7 +14,6 @@ import { useData } from "../../hooks/useData"
 export default function Navbar() {
   const {isLogin} = useData()
   const username = isLogin.name
-  console.log(username)
   return (
     <>
       <nav>
