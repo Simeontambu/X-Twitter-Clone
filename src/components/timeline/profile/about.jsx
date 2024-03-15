@@ -1,6 +1,6 @@
 import Image from "../home/image"
 import { useData } from "../../../hooks/useData"
-import { useParams } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 import Button from "../home/button"
 import ProfileName from "./profileName"
 import { FaRegCalendarAlt } from "react-icons/fa"
@@ -10,8 +10,13 @@ import Private from "./../../../images/Private.svg"
 import more from "./../../../images/More-2.svg"
 
 export default function About() {
-  const { loading, userDataAndTweet, userByUsername, userTweetByUsername,isLogin } =
-    useData()
+  const {
+    loading,
+    userDataAndTweet,
+    userByUsername,
+    userTweetByUsername,
+    isLogin,
+  } = useData()
   const { user } = useParams()
 
   //Recovery of user data and tweets
@@ -33,7 +38,10 @@ export default function About() {
         : userByUsername.name === user && (
             <div>
               <div className="profile-header">
+                <Link to='/'>
+                
                 <WiDirectionLeft size="24" />
+                </Link>
                 <div>
                   <div className="setting-icone">
                     <ProfileName name={userByUsername.name} />
@@ -57,10 +65,14 @@ export default function About() {
                   src={userByUsername.profilePicture}
                   className="profile-photo"
                 />
-                {isLogin.name === userByUsername.name?<Button name="Edit profile" className="profile-edit-button" />:
-                (<div className="follow-more">
-                  <Image src={more} className="more-button"/><Button name="Follow" className="profile-edit-button" />
-                  </div>)}
+                {isLogin.name === userByUsername.name ? (
+                  <Button name="Edit profile" className="profile-edit-button" />
+                ) : (
+                  <div className="follow-more">
+                    <Image src={more} className="more-button" />
+                    <Button name="Follow" className="profile-edit-button" />
+                  </div>
+                )}
               </div>
 
               <div className="about-profile">
